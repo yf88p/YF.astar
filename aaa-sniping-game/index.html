@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#14232c" />
+    <meta name="description" content="Silent Ridge. A cinematic alpine sniping mission. Take the high ground, steady your breath, and silence the relay." />
+    <title>Silent Ridge | Operation Dead Air</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      #boot { position: fixed; z-index: 100; inset: 0; display: grid; place-content: center; gap: 24px; text-align: center; background: #14232c; color: #efece4; font: 12px monospace; letter-spacing: .25em; pointer-events: none; }
+      #boot strong { font: 24px Arial, sans-serif; letter-spacing: .18em; }
+      #boot span { color: #c4a16c; font-size: 9px; }
+      #boot i { width: 50px; height: 1px; margin: 0 auto; background: #e1aa58; }
+    </style>
+  </head>
+  <body>
+    <div id="boot" role="status"><strong>SILENT RIDGE</strong><i></i><span>ESTABLISHING OVERWATCH</span></div>
+    <canvas id="game-canvas" aria-label="Three-dimensional alpine sniper game" tabindex="0"></canvas>
+    <noscript><style>#boot, canvas { display: none; } body { padding: 10vw; background: #14232c; color: #efece4; font: 18px Arial, sans-serif; }</style>This game requires JavaScript and a WebGL 2 capable browser.</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.playwright-cli/
+/automator
+/automator.exe
+/dist/
+*.test
+*.test.exe
+coverage.out
+
+# Local-only migration provenance and reference artifacts, never production inputs.
+.automator-reference/
+AUTOMATOR_SOURCE_COMMIT.txt
+AUTOMATOR_SOURCE_STATUS.txt
+AUTOMATOR_SOURCE_WORKTREE.patch

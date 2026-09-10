@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#202e30" />
+    <meta
+      name="description"
+      content="Your next horizon is waiting. Fly three aircraft over a scenic coastal world in Aeronaut, a free browser flight simulator."
+    />
+    <title>Aeronaut - Your Next Horizon</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <canvas id="world" aria-label="Three-dimensional flight simulator"></canvas>
+    <div class="scene-shade"></div>
+    <div id="app">
+      <header class="masthead">
+        <a class="brand" href="#" id="brand-link" aria-label="Aeronaut home">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path
+              d="M2 22 15 4h4L12 22zm12 0L26 4h4L18 22zM4 27h23v2H4z"
+              fill="currentColor"
+            />
+          </svg>
+          <span
+            >AERONAUT<span class="brand-sub">THE FLIGHT EXPERIENCE</span></span
+          >
+        </a>
+        <div class="header-center">
+          <span class="status-dot"></span
+          ><span id="header-status">A WORLD ABOVE THE EVERYDAY</span>
+        </div>
+        <div class="header-actions">
+          <button
+            id="sound-btn"
+            class="icon-button"
+            title="Toggle sound (M)"
+            aria-label="Enable sound"
+            aria-pressed="false"
+          ></button>
+          <button id="help-btn" class="text-button">
+            Flight guide <span class="keycap">?</span>
+          </button>
+          <button
+            id="pause-btn"
+            class="icon-button flight-only"
+            title="Pause (Esc)"
+            aria-label="Pause flight"
+          ></button>
+        </div>
+      </header>
+
+      <main id="menu" class="menu">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="tiny-rule"></span> A DIFFERENT POINT OF VIEW
+          </div>
+          <h1>Find your<br /><em>higher ground.</em></h1>
+          <p>
+            Leave the ordinary below.<br />Pick your aircraft. Chase the
+            horizon.
+          </p>
+          <button id="intro-guide" class="inline-link">
+            Your first time in the sky? <span>Meet your controls ↗</span>
+          </button>
+        </div>
+        <div class="location-mark">
+          <span class="crosshair-mark">+</span>
+          <div>THE EMERALD COAST<span>48° 36′ N &nbsp; 123° 28′ W</span></div>
+        </div>
+        <div class="scenery-note">
+          <span class="scenery-line"></span
+          ><span>UNLIMITED SKY.<br />ONE PERFECT ESCAPE.</span>
+        </div>
+        <section class="dispatch" aria-label="Set up your flight">
+          <div class="dispatch-heading">
+            <span>YOUR NEXT HORIZON</span><span>FLIGHT PLAN <b>001</b></span>
+          </div>
+          <div class="dispatch-options">
+            <label class="dispatch-field"
+              ><span class="field-label"><b>01</b> YOUR AIRCRAFT</span
+              ><select id="aircraft-select" aria-label="Aircraft">
+                <option value="trainer">Trainer 172</option>
+                <option value="tourer">Tourer GT</option>
+                <option value="sport">Sport S2</option></select
+              ><span id="aircraft-detail" class="field-detail"
+                >High-wing · Forgiving &amp; familiar</span
+              ></label
+            >
+            <label class="dispatch-field"
+              ><span class="field-label"><b>02</b> THE ADVENTURE</span
+              ><select id="flight-select" aria-label="Flight scenario">
+                <option value="coast">Coastal discovery</option>
+                <option value="runway">Runway departure</option>
+                <option value="landing">The perfect landing</option>
+                <option value="mountain">Above the peaks</option></select
+              ><span id="flight-detail" class="field-detail"
+                >Already airborne. Just explore.</span
+              ></label
+            >
+            <label class="dispatch-field weather-field"
+              ><span class="field-label"><b>03</b> THE CONDITIONS</span
+              ><select id="weather-select" aria-label="Weather">
+                <option value="clear">Clear &amp; calm</option>
+                <option value="sunset">Golden hour</option>
+                <option value="cloudy">Coastal breeze</option>
+                <option value="storm">Passing storm</option></select
+              ><span id="weather-detail" class="field-detail"
+                >18°C · Light wind · 25 km visibility</span
+              ></label
+            >
+            <button id="fly-btn" class="launch-button" disabled>
+              <span id="launch-label">Preparing the sky</span
+              ><span class="launch-arrow">↗</span
+              ><small id="launch-detail">BUILDING YOUR WORLD</small>
+            </button>
+          </div>
+        </section>
+        <footer class="menu-footer">
+          <span>BUILT FOR THE LOVE OF FLIGHT.</span
+          ><span
+            ><span class="status-dot"></span> REAL PHYSICS. REAL FREEDOM.</span
+          ><span
+            >HEADPHONES RECOMMENDED <span class="headphone-icon">♬</span></span
+          >
+        </footer>
+      </main>
+
+      <section
+        id="flight-ui"
+        class="flight-ui"
+        aria-label="Flight instruments"
+        hidden
+      >
+        <div class="flight-info">
+          <span class="eyebrow" id="flight-type">FREE FLIGHT</span>
+          <h2 id="flight-name">Coastal discovery</h2>
+          <p id="flight-instruction">Follow your curiosity.</p>
+        </div>
+        <div class="flight-tools">
+          <button id="camera-btn" class="tool-button" title="Change camera (C)">
+            <span id="camera-icon"></span><span id="camera-label">Chase</span
+            ><kbd>C</kbd>
+          </button>
+          <button
+            id="mouse-btn"
+            class="tool-button"
+            aria-pressed="false"
+            title="Mouse flight controls"
+          >
+            <span id="mouse-icon"></span><span>Mouse pilot</span>
+          </button>
+          <button
+            id="assist-btn"
+            class="tool-button active"
+            aria-pressed="true"
+            title="Toggle automatic rudder coordination"
+          >
+            <span class="assist-dot"></span><span>Auto rudder</span>
+          </button>
+        </div>
+        <div id="compass" class="compass">
+          <div class="compass-ticks"></div>
+          <span class="compass-caret">▼</span
+          ><span id="heading-readout">000</span
+          ><span class="compass-unit">HDG</span>
+        </div>
+        <div class="hud-reticle" id="reticle">
+          <span></span><i></i><span></span>
+        </div>
+        <div id="warning" class="warning" role="status" hidden></div>
+        <div id="toast" class="toast" role="status" hidden></div>
+        <div id="objective" class="objective" hidden>
+          <span id="objective-label">FINAL APPROACH</span>
+          <div class="objective-bar"><i id="objective-progress"></i></div>
+          <p id="objective-description">Line up with runway 36</p>
+        </div>
+        <div class="map-widget">
+          <div class="map-heading">
+            <span>EMERALD COAST</span><span id="map-range">6 NM</span>
+          </div>
+          <canvas
+            id="map"
+            width="360"
+            height="260"
+            aria-label="Navigation map showing aircraft, terrain, and airport"
+          ></canvas>
+          <div class="map-footer">
+            <span><i class="map-airport"></i> EC01</span
+            ><span id="airport-distance">1.2 NM TO FIELD</span>
+          </div>
+        </div>
+        <div class="touch-controls" id="touch-controls">
+          <div
+            id="joystick"
+            class="joystick"
+            aria-label="Drag to control pitch and roll"
+          >
+            <div class="joystick-cross"></div>
+            <div id="joystick-thumb"></div>
+            <span>PITCH / ROLL</span>
+          </div>
+          <div class="touch-yaw">
+            <button id="yaw-left" aria-label="Rudder left">RUD ◀</button
+            ><button id="yaw-right" aria-label="Rudder right">▶ RUD</button>
+          </div>
+        </div>
+        <div class="instrument-panel">
+          <div class="instrument flight-speed">
+            <span class="instrument-label">AIRSPEED</span>
+            <div class="instrument-value">
+              <b id="speed-value">93</b><span>KTS</span>
+            </div>
+            <div class="speed-scale"><i id="speed-bar"></i></div>
+          </div>
+          <div class="attitude-wrap">
+            <canvas
+              id="attitude"
+              width="240"
+              height="240"
+              aria-label="Artificial horizon"
+            ></canvas
+            ><span class="attitude-label">ATTITUDE</span>
+          </div>
+          <div class="instrument altitude-instrument">
+            <span class="instrument-label">ALTITUDE</span>
+            <div class="instrument-value">
+              <b id="altitude-value">1,640</b><span>FT</span>
+            </div>
+            <span class="instrument-sub"
+              ><span id="agl-value">1,580</span> AGL</span
+            >
+          </div>
+          <div class="instrument vs-instrument">
+            <span class="instrument-label">VERTICAL SPEED</span>
+            <div class="instrument-value small">
+              <b id="vs-value">+0</b><span>FT/MIN</span>
+            </div>
+            <span class="instrument-sub">G LOAD <b id="g-value">1.0</b></span>
+          </div>
+          <div class="instrument engine-instrument">
+            <label class="instrument-label" for="throttle"
+              >THROTTLE <b id="throttle-value">65%</b></label
+            ><input
+              id="throttle"
+              type="range"
+              min="0"
+              max="100"
+              value="65"
+              aria-label="Engine throttle"
+            /><span class="instrument-sub"
+              ><span id="rpm-value">2,250</span> RPM</span
+            >
+          </div>
+          <div class="configuration">
+            <button id="flaps-btn" title="Cycle flaps (F)">
+              <span>FLAPS</span><b id="flaps-value">0°</b><kbd>F</kbd></button
+            ><button
+              id="brakes-btn"
+              title="Hold wheel brakes (B)"
+              aria-pressed="false"
+            >
+              <span>BRAKES</span><b id="brakes-value">OFF</b><kbd>B</kbd>
+            </button>
+          </div>
+        </div>
+        <footer class="flight-footer">
+          <span id="control-hint"
+            ><kbd>↑</kbd><kbd>↓</kbd> PITCH <kbd>←</kbd><kbd>→</kbd> ROLL
+            <kbd>Q</kbd><kbd>E</kbd> RUDDER <kbd>W</kbd
+            ><kbd>S</kbd> THROTTLE</span
+          ><span id="flight-time">00:00 FLIGHT TIME</span
+          ><button id="hide-hud-btn" title="Toggle instruments (H)">
+            CLEAN VIEW <kbd>H</kbd>
+          </button>
+        </footer>
+      </section>
+
+      <div id="modal-backdrop" class="modal-backdrop" hidden>
+        <section
+          id="guide-modal"
+          class="modal guide-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="guide-title"
+          hidden
+        >
+          <button
+            class="close-modal"
+            data-close
+            aria-label="Close flight guide"
+          >
+            ×
+          </button>
+          <div class="eyebrow">A FEW THINGS BEFORE YOU FLY</div>
+          <h2 id="guide-title">
+            Make yourself<br /><em>at home in the sky.</em>
+          </h2>
+          <div class="guide-tabs">
+            <button class="active" data-guide="controls">The controls</button
+            ><button data-guide="flying">The art of flying</button
+            ><button data-guide="settings">Your preferences</button>
+          </div>
+          <div id="guide-controls" class="guide-content">
+            <div class="control-grid">
+              <div>
+                <span>Pitch nose up / down</span
+                ><span><kbd>↓</kbd> / <kbd>↑</kbd></span>
+              </div>
+              <div>
+                <span>Bank left / right</span
+                ><span><kbd>←</kbd> / <kbd>→</kbd></span>
+              </div>
+              <div>
+                <span>Throttle up / down</span
+                ><span><kbd>W</kbd> / <kbd>S</kbd></span>
+              </div>
+              <div>
+                <span>Rudder left / right</span
+                ><span><kbd>Q</kbd> / <kbd>E</kbd></span>
+              </div>
+              <div>
+                <span>Flaps / hold brakes</span
+                ><span><kbd>F</kbd> / <kbd>B</kbd></span>
+              </div>
+              <div><span>Change camera</span><kbd>C</kbd></div>
+              <div>
+                <span>Pause / restart</span
+                ><span><kbd>Esc</kbd> / <kbd>R</kbd></span>
+              </div>
+              <div>
+                <span>Clean view / sound</span
+                ><span><kbd>H</kbd> / <kbd>M</kbd></span>
+              </div>
+            </div>
+            <p class="guide-note">
+              Prefer a mouse? Enable <b>Mouse pilot</b> in flight, then drag
+              anywhere in the sky. Pull down to climb. Touch controls appear on
+              phones and tablets. Gamepad: left stick to fly, right stick
+              up/down for throttle, triggers for rudder.
+            </p>
+          </div>
+          <div id="guide-flying" class="guide-content" hidden>
+            <div class="flying-tips">
+              <article>
+                <b>01 <span>Small inputs. Big horizons.</span></b>
+                <p>
+                  Use gentle taps to change your attitude. Bank to turn, then
+                  add a little back pressure to hold altitude. Release the
+                  controls to let the aircraft settle.
+                </p>
+              </article>
+              <article>
+                <b>02 <span>Let the wing do the work.</span></b>
+                <p>
+                  On the runway, use full throttle. At 55–65 knots, gently pull
+                  the nose up. Climb at 75–85 knots. If you hear a stall
+                  warning, lower the nose and add power.
+                </p>
+              </article>
+              <article>
+                <b>03 <span>Every great flight has a soft finish.</span></b>
+                <p>
+                  Approach runway 36 at 65–75 knots in the trainer, or 80–90
+                  knots in the tourer and sport, with flaps 20–30°. Descend
+                  gently, then ease the nose up just before touchdown. Idle
+                  the throttle and hold B to brake.
+                </p>
+              </article>
+            </div>
+            <p class="guide-note">
+              Aeronaut models lift, drag, stalls, wind, inertia and ground
+              handling. It is a recreational simulator, not a certified
+              flight-training device.
+            </p>
+          </div>
+          <div id="guide-settings" class="guide-content" hidden>
+            <label class="setting-row"
+              ><span
+                >Control sensitivity<small
+                  >Gentler inputs for a smoother flight</small
+                ></span
+              ><input
+                id="sensitivity"
+                type="range"
+                min="25"
+                max="100"
+                value="65"
+                aria-label="Control sensitivity" /></label
+            ><label class="setting-row"
+              ><span
+                >Sound volume<small
+                  >Engine, airflow, and cockpit warnings</small
+                ></span
+              ><input
+                id="volume"
+                type="range"
+                min="0"
+                max="100"
+                value="45"
+                aria-label="Sound volume" /></label
+            ><label class="setting-row"
+              ><span
+                >Graphics quality<small
+                  >Lower quality helps on older devices</small
+                ></span
+              ><select id="quality" aria-label="Graphics quality">
+                <option value="auto">Auto</option>
+                <option value="high">High</option>
+                <option value="low">Performance</option>
+              </select></label
+            ><label class="setting-row"
+              ><span
+                >Invert pitch<small
+                  >Reverse mouse, touch, and stick pitch</small
+                ></span
+              ><input id="invert" type="checkbox" /></label
+            ><button id="fullscreen-btn" class="secondary-button">
+              Enter fullscreen ↗
+            </button>
+          </div>
+          <button id="guide-done" class="primary-button">
+            Ready for the horizon <span>↗</span>
+          </button>
+        </section>
+        <section
+          id="pause-modal"
+          class="modal pause-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="pause-title"
+          hidden
+        >
+          <div class="eyebrow">TAKE A BREATHER</div>
+          <h2 id="pause-title">The sky can wait.</h2>
+          <p>Your flight is paused. Pick up right where you left off.</p>
+          <div class="pause-stats">
+            <div><span>AIRBORNE</span><b id="pause-time">00:00</b></div>
+            <div><span>DISTANCE</span><b id="pause-distance">0.0 NM</b></div>
+            <div><span>MAX ALTITUDE</span><b id="pause-altitude">0 FT</b></div>
+          </div>
+          <button id="resume-btn" class="primary-button">
+            Back to the sky <span>↗</span>
+          </button>
+          <div class="pause-secondary">
+            <button id="restart-btn" class="secondary-button">
+              Restart flight</button
+            ><button id="home-btn" class="secondary-button">
+              Flight planner
+            </button>
+          </div>
+        </section>
+        <section
+          id="result-modal"
+          class="modal result-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="result-title"
+          hidden
+        >
+          <div class="eyebrow" id="result-eyebrow">
+            EVERY FLIGHT TEACHES YOU SOMETHING
+          </div>
+          <h2 id="result-title">A little too<br /><em>close to earth.</em></h2>
+          <p id="result-message"></p>
+          <div class="pause-stats">
+            <div><span>FLIGHT TIME</span><b id="result-time">00:00</b></div>
+            <div><span>DISTANCE</span><b id="result-distance">0 NM</b></div>
+            <div>
+              <span>BEST ALTITUDE</span><b id="result-altitude">0 FT</b>
+            </div>
+          </div>
+          <button id="retry-btn" class="primary-button">
+            Fly again <span>↗</span></button
+          ><button id="result-home" class="secondary-button full-width">
+            Back to flight planner
+          </button>
+        </section>
+      </div>
+      <div id="load-error" class="load-error" role="alert" hidden>
+        <h2>We couldn’t prepare the sky.</h2>
+        <p id="load-error-message">
+          Please use a browser with WebGL 2 enabled.
+        </p>
+        <button onclick="location.reload()" class="primary-button">
+          Try again
+        </button>
+      </div>
+      <button id="restore-hud" hidden>Show instruments <kbd>H</kbd></button>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

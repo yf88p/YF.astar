@@ -1,0 +1,5 @@
+{
+  "apiVersion": 1,
+  "name": "whitespace",
+  "entry": "./index.mjs"
+}

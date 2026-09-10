@@ -1,0 +1,130 @@
+{
+  "verifiedAt": "2026-09-06T11:37:17.540Z",
+  "status": "16 workflows passed across completed runs; GLB corrected; live overlays, views, night, presentation and cancellation verified",
+  "completeSingleRunPassed": false,
+  "executionNote": "A complete-suite attempt reached nine successful workflows before the external 20-minute command limit terminated Chromium. Remaining workflows were executed in separate filtered runs. Performance was rerun with a GPU readback barrier. The GLB defect was then corrected and the GLB plus runtime checks passed in a final focused run. This is consolidated evidence, not a claim that an uninterrupted full suite passed.",
+  "filesOwned": ["tests/browser.ts", "docs/verification.json"],
+  "applicationSourceModifiedByVerifier": false,
+  "commands": [
+    "npx tsc --noEmit",
+    "npx tsx tests/browser.ts",
+    "FORMA_TEST='JSON download|PNG|GLB|Visible workload|Fresh mobile|No runtime' FORMA_REPORT=/tmp/opencode/forma-remaining-verification.json npx tsx tests/browser.ts",
+    "FORMA_TEST='Visible workload|No runtime' FORMA_REPORT=/tmp/opencode/forma-performance-verification.json npx tsx tests/browser.ts",
+    "FORMA_TEST='GLB|No runtime' FORMA_REPORT=/tmp/opencode/forma-export-final.json npx tsx tests/browser.ts",
+    "npm run verify",
+    "FORMA_TEST='Live overlays|No runtime' FORMA_REPORT=/tmp/opencode/forma-integrity-final.json npm run test:browser",
+    "FORMA_TEST='Building roof|GLB|No runtime' FORMA_REPORT=/tmp/opencode/forma-final-regressions.json npm run test:browser"
+  ],
+  "rawReports": [
+    "/tmp/opencode/forma-verification.json",
+    "/tmp/opencode/forma-remaining-verification.json",
+    "/tmp/opencode/forma-performance-verification.json"
+  ],
+  "screenshots": {
+    "desktop": "/tmp/opencode/forma-verified-desktop.png",
+    "mobile": "/tmp/opencode/forma-verified-mobile.png"
+  },
+  "typecheck": "passed",
+  "productionSmoke": { "passed": true, "roads": 120, "buildings": 413, "props": 918, "activeVehicles": 110, "bundledWorkerEdit": "New empty city committed one history transaction", "runtimeErrors": 0, "screenshot": "/tmp/opencode/forma-production-desktop.png" },
+  "finalRegressionRun": { "passed": 3, "failed": 0, "buildingEditAndDistantRoadMs": 292788, "glbRoundTripWithMetadataMs": 59013, "report": "/tmp/opencode/forma-final-regressions.json" },
+  "workflows": [
+    { "name": "Desktop initial render", "status": "passed" },
+    { "name": "Empty canvas rectangle and exact history", "status": "passed" },
+    { "name": "T four-way and supported diagonal topology", "status": "passed" },
+    { "name": "Terrain drag is one transaction", "status": "passed" },
+    { "name": "Riverfront bridge geometry and canvas inspector", "status": "passed" },
+    { "name": "UI bridge route bank-to-bank continuity and Follow", "status": "passed" },
+    { "name": "Building roof pick edit and stable ID after distant road", "status": "passed" },
+    { "name": "Grade separation and connecting road deletion reset", "status": "passed" },
+    { "name": "Malformed JSON imports are atomic", "status": "passed" },
+    { "name": "JSON download import reload and continued editing", "status": "passed" },
+    { "name": "PNG download signature and dimensions", "status": "passed" },
+     { "name": "GLB binary mesh counts actual loader and metre bounds", "status": "passed", "resolvedBug": "GLB-001", "finalRunMs": 72931 },
+     { "name": "Live overlays presentation saved views night and cancellation", "status": "passed", "finalRunMs": 84101 },
+     { "name": "Visible workload orbit and honest render measurements", "status": "passed", "note": "Measurement integrity passed; this is not a 60 FPS performance acceptance." },
+    { "name": "Fresh mobile render inspector and real road edit", "status": "passed" },
+    { "name": "No runtime errors or remote services", "status": "passed" }
+  ],
+  "bugs": [
+    {
+      "id": "GLB-001",
+      "status": "fixed and verified",
+      "title": "GLB exports spare vehicle color capacity as active instance attributes",
+      "repro": "Open fresh Riverfront with the default 110 vehicles. Export > 3D city geometry. Parse the GLB JSON chunk and inspect both Vehicle enamel nodes' EXT_mesh_gpu_instancing accessors.",
+      "expected": "TRANSLATION, ROTATION, SCALE and _COLOR_0 must all have the same count of 110 active instances.",
+      "actual": "Both Vehicle enamel nodes have TRANSLATION=110, ROTATION=110, SCALE=110, _COLOR_0=128.",
+      "sourceReferences": ["src/scene.ts:793", "src/scene.ts:1092", "node_modules/three/examples/jsm/exporters/GLTFExporter.js:3333"],
+      "cause": "Vehicle instanceColor buffers are allocated at capacity 128. The export snapshot retains that buffer; GLTFExporter exports the whole color attribute while using mesh.count for transforms.",
+      "suggestedFix": "In the cloned export snapshot, trim instanceColor to mesh.count * itemSize before export, without changing the live renderer buffers. Retain the failing accessor-count assertion.",
+      "implementedFix": "Trimmed cloned instanceColor buffers to active mesh.count without touching live buffers. All instancing accessor counts now agree. Actual GLTFLoader round-trip, mesh counts, and metre dimensions passed.",
+      "focusedCommand": "FORMA_TEST=GLB npx tsx tests/browser.ts",
+      "severityNote": "The GLB violates instancing accessor consistency even though Three.js GLTFLoader tolerates and loads it. Geometry counts and dimensions pass independently."
+    }
+  ],
+  "geometryMeasurements": {
+    "rectangle": { "roads": 4, "nodes": 4, "components": 1, "independentCycleRank": 1, "parcels": 100, "buildings": 93, "minimumBuildingSetbackMeters": 2.5015 },
+    "terrainStroke": { "changedHeightSamples": 51, "historyTransactions": 1 },
+    "bridge": { "id": "road-194", "alignmentSamples": 51, "maxGrade": 0.10000000000000053, "deckElevationMeters": 4, "waterElevationMeters": -1, "clearanceMeters": 5 },
+    "bridgeVehicle": { "id": "vehicle-110", "startZ": -63.905397209963844, "endZ": 76.06244747076244, "maximumFixedStepDisplacementMeters": 0.18333333333334248, "fixedStepSeconds": 0.016666666666666666, "routeChanged": false },
+    "editedBuilding": { "id": "building-parcel-6g5ouc-6rwqof", "floors": 22, "heightMeters": 70.4, "palette": 2, "roof": "terrace", "preservedExactlyAfterDistantRoad": true }
+  },
+  "exports": {
+    "json": { "bytes": 563071, "exactRoundTrip": true, "exactLocalStorageRecovery": true, "continuedEdit": "Verified Riverfront" },
+    "png": { "bytes": 561225, "signature": "89504e470d0a1a0a", "width": 1082, "height": 843, "uniqueColorsIn64PixelSquareSample": 1027 },
+    "glb": {
+      "bytes": 7169576,
+      "meshDefinitions": 47,
+      "meshNodes": 50,
+      "liveSourceMeshNodes": 50,
+      "actualGLTFLoaderMeshNodes": 50,
+      "loadedBox3DimensionsMeters": [960, 85.42000275850299, 960],
+      "loadedTerrainDimensionsMeters": [960, 4, 960],
+      "metadataNote": "Per-mesh editor metadata is stripped. The final export adds root Forma extras with units, seed, dimensions, and building/road/prop IDs. Live export-root building/road/vehicle IDs were independently cross-referenced with model entities; active instance counts and loaded geometry were compared with that root.",
+      "accessorCountValidation": "passed after GLB-001 fix",
+      "finalTotalActiveInstances": 68624
+    }
+  },
+  "performance": {
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics",
+    "logicalCPUs": 16,
+    "browser": "Chromium 153.0.8010.12 headless",
+    "gpuVendor": "Google Inc. (Google)",
+    "gpuRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "softwareRendering": true,
+    "desktopViewport": [1440, 1000],
+    "drawingBuffer": [1082, 843],
+    "devicePixelRatio": 1,
+    "roads": 120,
+    "buildings": 413,
+    "activeVehicles": 110,
+    "drawCalls": 51,
+    "triangles": 472448,
+    "geometries": 28,
+    "generationWorkerMs": 1162.2000000029802,
+    "meshRebuildMs": 184.30000001192093,
+    "orbitUsedActualMouseDrag": true,
+    "requestedFrameSamples": 60,
+    "actualFrameSamples": 14,
+    "frameProbeCapMs": 25000,
+    "actualProbeElapsedMs": 25719.39999999106,
+    "frameMeanMs": 1835.642857142857,
+    "frameMedianMs": 1899.8999999999942,
+    "frameP95Ms": 2183.1999999999825,
+    "measuredFPS": 0.5447682789213588,
+    "priorRunMeasuredFPS": 0.8605313389867641,
+    "cpuSubmissionMeanMs": 1.8333333432674408,
+    "renderPlusFinishOnlyMeanMs": 1.8333333432674408,
+    "renderPlusFinishAndReadbackMeanMs": 1922.5333333412807,
+    "synchronizedSamples": 3,
+    "synchronizationNote": "gl.finish alone returned before Chromium's GPU process completed. A one-pixel gl.readPixels barrier forces completed rendering. The synchronized measurement includes readback overhead and is not pure GPU timer-query time. CPU submission is not FPS.",
+    "sixtyFPSDemonstrated": false
+  },
+  "mobile": { "viewport": [390, 844], "freshLocalStorage": true, "initialRoads": 120, "initialBuildings": 413, "initialVehicles": 110, "horizontalOverflow": false, "inspectorTogglePassed": true, "preciseUIRoadCommitted": true },
+  "runtime": { "uncaughtErrors": 0, "consoleErrors": 0, "offOriginRequests": 0 },
+  "limitations": [
+    "The browser verifier reported the GLB defect; it was subsequently patched in the application and independently rerun.",
+    "Application source was changing concurrently during early attempts. The private Vite server disables HMR to avoid mid-workflow reloads; no changes were made to the existing localhost:5194 process.",
+    "Software rendering made complete runs exceed external command limits. See filtered commands and raw reports for exact execution boundaries.",
+    "Final npm run verify passed: 47 independent tests, strict TypeScript checking, and Vite production build. The build reports a nonfatal large JavaScript chunk warning."
+  ]
+}

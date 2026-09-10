@@ -1,0 +1,232 @@
+.dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  padding: 0;
+  width: min(640px, calc(100vw - 32px));
+  max-height: calc(100svh - 40px);
+  color: #242522;
+  background: #f7f6f1;
+  border: 0;
+  font-family: var(--font-sans), Arial, sans-serif;
+  overscroll-behavior: contain;
+  text-align: left;
+  box-shadow: 0 30px 120px #0004;
+}
+.dialog::backdrop {
+  background: #10100ebf;
+  backdrop-filter: blur(8px);
+}
+.dialog[open] {
+  animation: dialog-enter 0.25s ease-out;
+}
+.content {
+  padding: 48px;
+}
+.eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+.content h2 {
+  font-size: clamp(32px, 5vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+  margin-bottom: 22px;
+  max-width: 440px;
+}
+.content h2:focus {
+  outline: none;
+}
+.content p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666760;
+}
+.close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background: #f7f6f1;
+  border: 1px solid #d9d9cf;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+.close:hover {
+  background: #e7e7df;
+}
+.form {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.form[hidden] {
+  display: none;
+}
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.form input,
+.form textarea,
+.form select {
+  border: 1px solid #d2d3c8;
+  border-radius: 0;
+  background: #fff8;
+  padding: 12px;
+  width: 100%;
+  min-width: 0;
+  font-size: 14px;
+  color: #242522;
+  font-weight: 400;
+  outline-color: #555f3d;
+}
+.form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #252721;
+  color: #fff;
+  padding: 16px 20px;
+  border: 0;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.submit:hover {
+  background: #51564b;
+}
+.submit span {
+  font-size: 23px;
+  line-height: 1;
+}
+.privacy {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #717369;
+}
+.ready a:not(.submit) {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.ready .notice {
+  font-size: 11px;
+  margin-top: 13px;
+}
+.brief {
+  margin: 20px 0;
+  padding: 20px;
+  max-height: 230px;
+  white-space: pre-wrap;
+  overflow: auto;
+  border: 1px solid #d2d3c8;
+  font:
+    12px/1.8 var(--font-mono),
+    monospace;
+  overflow-wrap: anywhere;
+}
+.brief:focus-visible {
+  outline: 2px solid #626b5b;
+  outline-offset: 3px;
+}
+.readyActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.readyActions button {
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 1px solid #919288;
+  background: transparent;
+  font-size: 12px;
+}
+.projectDialog {
+  width: min(800px, calc(100vw - 32px));
+}
+.projectImage {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background: #d6d8cf;
+}
+.projectImage img {
+  object-fit: cover;
+}
+.projectInfo {
+  margin: 32px 0;
+  border-top: 1px solid #d2d3c8;
+  padding-top: 27px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 32px;
+}
+.projectInfo h3 {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.projectInfo li {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #666760;
+}
+.projectInfo p {
+  font-size: 12px;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@keyframes dialog-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 600px) {
+  .content {
+    padding: 50px 24px 28px;
+  }
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+  .projectImage {
+    height: 210px;
+  }
+  .projectInfo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

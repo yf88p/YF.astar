@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+verification/*.png
+verification/*.json
+verification/*.csv
+verification/*.svg
+verification/*.webm

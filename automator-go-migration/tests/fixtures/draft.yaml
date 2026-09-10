@@ -1,0 +1,7 @@
+schema_version: 1
+name: smoke run
+root: /tmp/automator-smoke
+template: empty
+mode: headless
+prompt: |
+  hello

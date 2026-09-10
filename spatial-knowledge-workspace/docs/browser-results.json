@@ -1,0 +1,1110 @@
+{
+  "startedAt": "2026-09-06T16:47:30.303Z",
+  "base": "http://127.0.0.1:5198",
+  "server": "vite preview (existing production build)",
+  "hardware": {
+    "platform": "linux",
+    "release": "7.0.0-31-generic",
+    "arch": "x64",
+    "cpuModel": "AMD Ryzen 7 5825U with Radeon Graphics",
+    "logicalCpus": 16,
+    "availableParallelism": 16,
+    "totalMemoryBytes": 12949561344,
+    "freeMemoryBytesAtStart": 4532568064,
+    "loadAverageAtStart": [
+      10.11,
+      6,
+      5.44
+    ],
+    "node": "v24.19.0",
+    "cpuThrottling": "none (CDP rate 1)",
+    "networkThrottling": "none",
+    "loadAverageAtEnd": [
+      10.38,
+      7.26,
+      5.94
+    ],
+    "freeMemoryBytesAtEnd": 5700591616
+  },
+  "scenarios": [
+    {
+      "name": "Integrated seed smoke",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:30.660Z",
+      "finishedAt": "2026-09-06T16:47:32.188Z"
+    },
+    {
+      "name": "Live excerpt signature",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:32.203Z",
+      "finishedAt": "2026-09-06T16:47:36.372Z"
+    },
+    {
+      "name": "Split merge tombstone restore",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:36.378Z",
+      "finishedAt": "2026-09-06T16:47:39.459Z"
+    },
+    {
+      "name": "Canonical shared placements",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:39.462Z",
+      "finishedAt": "2026-09-06T16:47:41.793Z"
+    },
+    {
+      "name": "Independent card reading scroll",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:41.797Z",
+      "finishedAt": "2026-09-06T16:47:47.191Z"
+    },
+    {
+      "name": "Frozen and trashed sources",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:47.201Z",
+      "finishedAt": "2026-09-06T16:47:51.434Z"
+    },
+    {
+      "name": "Relationships drag and undo",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:51.440Z",
+      "finishedAt": "2026-09-06T16:47:53.877Z"
+    },
+    {
+      "name": "Search filters and refresh",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:53.888Z",
+      "finishedAt": "2026-09-06T16:47:55.963Z"
+    },
+    {
+      "name": "Internal links and backlinks",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:55.972Z",
+      "finishedAt": "2026-09-06T16:47:58.292Z"
+    },
+    {
+      "name": "Safe external link attachment",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:47:58.299Z",
+      "finishedAt": "2026-09-06T16:48:01.828Z"
+    },
+    {
+      "name": "Unsafe URL rejection",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:01.837Z",
+      "finishedAt": "2026-09-06T16:48:04.644Z"
+    },
+    {
+      "name": "Reusable image attachment",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:04.651Z",
+      "finishedAt": "2026-09-06T16:48:08.410Z"
+    },
+    {
+      "name": "Multiple file import transaction",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:08.412Z",
+      "finishedAt": "2026-09-06T16:48:09.803Z"
+    },
+    {
+      "name": "Import export reload isolation",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:09.810Z",
+      "finishedAt": "2026-09-06T16:48:15.481Z"
+    },
+    {
+      "name": "Document Markdown download",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:15.489Z",
+      "finishedAt": "2026-09-06T16:48:18.166Z"
+    },
+    {
+      "name": "Board SVG download and render",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:18.172Z",
+      "finishedAt": "2026-09-06T16:48:21.920Z"
+    },
+    {
+      "name": "Quota failure and retry",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:21.930Z",
+      "finishedAt": "2026-09-06T16:48:25.430Z"
+    },
+    {
+      "name": "Blank workspace isolation",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:25.434Z",
+      "finishedAt": "2026-09-06T16:48:27.366Z"
+    },
+    {
+      "name": "Native input and keyboard safety",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:27.375Z",
+      "finishedAt": "2026-09-06T16:48:29.493Z"
+    },
+    {
+      "name": "CtrlK search focus",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:29.497Z",
+      "finishedAt": "2026-09-06T16:48:31.066Z"
+    },
+    {
+      "name": "Mobile reduced motion",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:31.073Z",
+      "finishedAt": "2026-09-06T16:48:32.923Z"
+    },
+    {
+      "name": "500 document performance",
+      "status": "passed",
+      "startedAt": "2026-09-06T16:48:32.928Z",
+      "finishedAt": "2026-09-06T16:48:52.084Z"
+    }
+  ],
+  "assertions": [
+    {
+      "scenario": "Integrated seed smoke",
+      "name": "shipped workspace, substantive cards and source editor render",
+      "status": "passed"
+    },
+    {
+      "scenario": "Integrated seed smoke",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Live excerpt signature",
+      "name": "native contenteditable fill edits the canonical passage",
+      "status": "passed"
+    },
+    {
+      "scenario": "Live excerpt signature",
+      "name": "gutter selection pins a live excerpt on the other board",
+      "status": "passed"
+    },
+    {
+      "scenario": "Live excerpt signature",
+      "name": "source action highlights the exact pinned block",
+      "status": "passed"
+    },
+    {
+      "scenario": "Live excerpt signature",
+      "name": "rename and reorder preserve the visible source reference",
+      "status": "passed"
+    },
+    {
+      "scenario": "Live excerpt signature",
+      "name": "editing after navigation updates the live rendered excerpt",
+      "status": "passed"
+    },
+    {
+      "scenario": "Live excerpt signature",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Split merge tombstone restore",
+      "name": "Enter splits at a native keyboard caret and keeps the first ID",
+      "status": "passed"
+    },
+    {
+      "scenario": "Split merge tombstone restore",
+      "name": "merged-away pinned block becomes visibly deleted, never retargeted",
+      "status": "passed"
+    },
+    {
+      "scenario": "Split merge tombstone restore",
+      "name": "opening a tombstone exposes the original passage and restore repairs it",
+      "status": "passed"
+    },
+    {
+      "scenario": "Split merge tombstone restore",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Canonical shared placements",
+      "name": "place the canonical document on a second board through its modal",
+      "status": "passed"
+    },
+    {
+      "scenario": "Canonical shared placements",
+      "name": "remove a placement without deleting the shared document",
+      "status": "passed"
+    },
+    {
+      "scenario": "Canonical shared placements",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Independent card reading scroll",
+      "name": "native wheel at 120% scrolls one canonical placement without panning or changing its peer",
+      "status": "passed"
+    },
+    {
+      "scenario": "Independent card reading scroll",
+      "name": "open/back preserves reading offset and the second placement scrolls independently",
+      "status": "passed"
+    },
+    {
+      "scenario": "Independent card reading scroll",
+      "name": "culling and reload restore both reading surfaces, not just saved object fields",
+      "status": "passed"
+    },
+    {
+      "scenario": "Independent card reading scroll",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Frozen and trashed sources",
+      "name": "frozen copy keeps its timestamp and wording after a source edit",
+      "status": "passed"
+    },
+    {
+      "scenario": "Frozen and trashed sources",
+      "name": "trash hides live source text, preserves frozen text and permits restore",
+      "status": "passed"
+    },
+    {
+      "scenario": "Frozen and trashed sources",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Relationships drag and undo",
+      "name": "connections view creates a labeled directed relationship through a modal",
+      "status": "passed"
+    },
+    {
+      "scenario": "Relationships drag and undo",
+      "name": "dragging an endpoint header changes actual SVG geometry; Ctrl+Z restores it",
+      "status": "passed"
+    },
+    {
+      "scenario": "Relationships drag and undo",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Search filters and refresh",
+      "name": "phrase query plus tag/type filters finds the exact source block",
+      "status": "passed"
+    },
+    {
+      "scenario": "Search filters and refresh",
+      "name": "search refreshes after editing a matching block",
+      "status": "passed"
+    },
+    {
+      "scenario": "Search filters and refresh",
+      "name": "deleting the source removes its search result without a reload",
+      "status": "passed"
+    },
+    {
+      "scenario": "Search filters and refresh",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Internal links and backlinks",
+      "name": "link picker creates an exact passage link and a visible backlink",
+      "status": "passed"
+    },
+    {
+      "scenario": "Internal links and backlinks",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Safe external link attachment",
+      "name": "attachment form inserts an actual safe anchor and native clicking opens its destination",
+      "status": "passed"
+    },
+    {
+      "scenario": "Safe external link attachment",
+      "name": "safe link and display text survive save and reload in the source document",
+      "status": "passed"
+    },
+    {
+      "scenario": "Safe external link attachment",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Unsafe URL rejection",
+      "name": "javascript URL stays in the modal with an error and creates no executable content",
+      "status": "passed"
+    },
+    {
+      "scenario": "Unsafe URL rejection",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Reusable image attachment",
+      "name": "an imported asset can be inserted into an existing document as a decoded image",
+      "status": "passed"
+    },
+    {
+      "scenario": "Reusable image attachment",
+      "name": "reused image and caption remain observable after reload",
+      "status": "passed"
+    },
+    {
+      "scenario": "Reusable image attachment",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Multiple file import transaction",
+      "name": "one native multi-file selection imports both Markdown and image",
+      "status": "passed"
+    },
+    {
+      "scenario": "Multiple file import transaction",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Import export reload isolation",
+      "name": "individual Markdown and raster uploads produce rendered editable content",
+      "status": "passed"
+    },
+    {
+      "scenario": "Import export reload isolation",
+      "name": "JSON download is self-contained and opens as an isolated package",
+      "status": "passed"
+    },
+    {
+      "scenario": "Import export reload isolation",
+      "name": "malformed package cannot replace existing visible or persisted source",
+      "status": "passed"
+    },
+    {
+      "scenario": "Import export reload isolation",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Document Markdown download",
+      "name": "native edits create observable heading, list, checked task and code blocks",
+      "status": "passed"
+    },
+    {
+      "scenario": "Document Markdown download",
+      "name": "individual Markdown download retains edited prose, semantic syntax and actual source IDs",
+      "status": "passed"
+    },
+    {
+      "scenario": "Document Markdown download",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Board SVG download and render",
+      "name": "board export source contains native edited text, a named frame, directed connection and imported image",
+      "status": "passed"
+    },
+    {
+      "scenario": "Board SVG download and render",
+      "name": "downloaded SVG parses as XML and retains visible titles, body, frame, label and embedded raster bytes",
+      "status": "passed"
+    },
+    {
+      "scenario": "Board SVG download and render",
+      "name": "SVG escapes script-like prose and connects directed markers at rectangle edges rather than hidden centers",
+      "status": "passed"
+    },
+    {
+      "scenario": "Board SVG download and render",
+      "name": "downloaded SVG decodes as a local Blob image with real raster pixels and no script execution",
+      "status": "passed"
+    },
+    {
+      "scenario": "Board SVG download and render",
+      "name": "authored SVG relationship label stays visible rather than being painted under a card",
+      "status": "passed"
+    },
+    {
+      "scenario": "Board SVG download and render",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Quota failure and retry",
+      "name": "Storage.setItem quota failure is visible and keeps unsaved work",
+      "status": "passed"
+    },
+    {
+      "scenario": "Quota failure and retry",
+      "name": "restoring the native prototype and Retry persists the same work",
+      "status": "passed"
+    },
+    {
+      "scenario": "Quota failure and retry",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Blank workspace isolation",
+      "name": "new blank workspace has no imported documents or placements",
+      "status": "passed"
+    },
+    {
+      "scenario": "Blank workspace isolation",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Native input and keyboard safety",
+      "name": "dragging native card text selects text without moving a placement",
+      "status": "passed"
+    },
+    {
+      "scenario": "Native input and keyboard safety",
+      "name": "Enter, Shift+Enter, Ctrl+Z and text deletion do not remove board cards",
+      "status": "passed"
+    },
+    {
+      "scenario": "Native input and keyboard safety",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "CtrlK search focus",
+      "name": "Ctrl+K focuses the search input so typing immediately searches",
+      "status": "passed"
+    },
+    {
+      "scenario": "CtrlK search focus",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "Mobile reduced motion",
+      "name": "mobile canvas and controls fit the viewport with reduced motion",
+      "status": "passed"
+    },
+    {
+      "scenario": "Mobile reduced motion",
+      "name": "mobile navigation and search can open an exact source",
+      "status": "passed"
+    },
+    {
+      "scenario": "Mobile reduced motion",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "500 docs / 300 placements / live excerpts and links are loaded in the actual UI with culling",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "seven unique phrase searches produce exact browser result text",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "seven document navigations show exact target passages",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "seven real keystrokes propagate to live excerpt DOM without waiting for autosave",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "seven independent editing keystrokes save and refresh a live excerpt at scale",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "seven zooms and header drags render changed geometry with measured rAF intervals",
+      "status": "passed"
+    },
+    {
+      "scenario": "500 document performance",
+      "name": "no browser runtime, console, HTTP or network errors",
+      "status": "passed"
+    }
+  ],
+  "browserErrors": [],
+  "screenshots": [
+    "/tmp/opencode/margin-check-integrated-seed-editor.png",
+    "/tmp/opencode/margin-check-live-excerpt.png",
+    "/tmp/opencode/margin-check-independent-reading-scroll.png",
+    "/tmp/opencode/margin-check-relationship-before.png",
+    "/tmp/opencode/margin-check-relationship-dragged.png",
+    "/tmp/opencode/margin-check-unsafe-url-rejected.png",
+    "/tmp/opencode/margin-check-reused-local-image-in-document.png",
+    "/tmp/opencode/margin-check-markdown-export-source.png",
+    "/tmp/opencode/margin-check-board-svg-render.png",
+    "/tmp/opencode/margin-check-mobile-reduced-motion.png",
+    "/tmp/opencode/margin-check-mobile-editor.png",
+    "/tmp/opencode/margin-check-performance-500docs-300placements.png",
+    "/tmp/opencode/margin-check-performance-after-gestures.png"
+  ],
+  "performance": {
+    "workload": "Synthetic: 500 expanded documents based on all 32 substantive Common Ground studies, distinct research indices and remapped internal links; no lorem ipsum. One board of 300 spatial placements, not a fit-all screenshot.",
+    "counts": {
+      "documents": 500,
+      "blocks": 3000,
+      "placements": 300,
+      "liveExcerpts": 100,
+      "internalLinks": 500,
+      "relationships": 150,
+      "totalLinks": 650,
+      "assets": 0,
+      "tombstones": 0,
+      "utf8Bytes": 1301939,
+      "utf16Bytes": 2603878,
+      "documentTextBytes": 780586,
+      "words": 115234
+    },
+    "mode": "production build",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "samplesPerOperation": 7,
+    "warmup": "One unrecorded search; navigation, save and gesture series include their first invocation.",
+    "methodology": "Browser performance.now starts at capture-phase native input/beforeinput/pointerdown. requestAnimationFrame observes the requested DOM output. Search includes deferred React results and next animation frame; navigation includes exact highlighted passage. Raw keystrokeToLiveDOM observes the mounted canvas excerpt behind the open editor overlay, without waiting for persistence; this is DOM propagation, not unobscured pixel presentation. A separate seven-keystroke save-inclusive series starts after the prior autosave settles and includes the 650ms debounce, validation, serialization and localStorage roundtrip. Gesture frame intervals are rAF gaps during 20 native mouse steps or a zoom click and two settling frames; not GPU/presentation latency or a Lighthouse score. p95 uses nearest rank; 7-sample p95 is the maximum. No pass/fail latency budget.",
+    "dom": {
+      "total": 300,
+      "visibleAttribute": 12,
+      "cardDOM": 12,
+      "relationshipDOM": 150,
+      "allCanvasDOM": 1800,
+      "allPageDOM": 1998,
+      "overviewCards": 0
+    },
+    "browser": {
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+      "hardwareConcurrency": 16,
+      "deviceMemoryGiB": 16,
+      "devicePixelRatio": 1,
+      "reducedMotion": false
+    },
+    "searchResultDOM": {
+      "samples": [
+        168.6,
+        105.9,
+        110,
+        95.2,
+        75.3,
+        103.7,
+        106.4
+      ],
+      "n": 7,
+      "medianMs": 105.9,
+      "p95Ms": 168.6,
+      "maxMs": 168.6
+    },
+    "documentNavigationDOM": {
+      "samples": [
+        89.5,
+        121.7,
+        51.6,
+        43.9,
+        39.6,
+        113.7,
+        58
+      ],
+      "n": 7,
+      "medianMs": 58,
+      "p95Ms": 121.7,
+      "maxMs": 121.7
+    },
+    "keystrokeToLiveDOM": {
+      "samples": [
+        28.5,
+        33,
+        21.5,
+        35.2,
+        31.7,
+        15.7,
+        18.8
+      ],
+      "n": 7,
+      "medianMs": 28.5,
+      "p95Ms": 35.2,
+      "maxMs": 35.2
+    },
+    "keystrokeToLiveAndSaved": {
+      "samples": [
+        752.9,
+        725.9,
+        695.6,
+        692.7,
+        698.1,
+        692.5,
+        690.6
+      ],
+      "n": 7,
+      "medianMs": 695.6,
+      "p95Ms": 752.9,
+      "maxMs": 752.9
+    },
+    "zoomGestureDuration": {
+      "samples": [
+        30.1,
+        30,
+        29.3,
+        29.5,
+        29.3,
+        28.2,
+        44.7
+      ],
+      "n": 7,
+      "medianMs": 29.5,
+      "p95Ms": 44.7,
+      "maxMs": 44.7
+    },
+    "zoomFrameIntervals": {
+      "samples": [
+        16.6,
+        16.6,
+        16.53,
+        16.6,
+        16.6,
+        16.6,
+        16.7,
+        16.6
+      ],
+      "n": 8,
+      "medianMs": 16.6,
+      "p95Ms": 16.7,
+      "maxMs": 16.7
+    },
+    "dragGestureDuration": {
+      "samples": [
+        363.7,
+        381.7,
+        381.4,
+        364.4,
+        364.8,
+        364.5,
+        364.7
+      ],
+      "n": 7,
+      "medianMs": 364.7,
+      "p95Ms": 381.7,
+      "maxMs": 381.7
+    },
+    "dragFrameIntervals": {
+      "samples": [
+        16.63,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.8,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.7,
+        16.63,
+        16.7,
+        16.6,
+        16.6,
+        16.8,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.8,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.67,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.57,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.7,
+        16.6,
+        16.7,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.7,
+        16.6,
+        16.6,
+        16.7,
+        16.8,
+        16.5,
+        16.8,
+        16.6,
+        16.7,
+        16.6,
+        16.8,
+        16.5,
+        16.8,
+        16.6,
+        16.7,
+        16.7,
+        16.6,
+        16.6,
+        16.7,
+        16.7
+      ],
+      "n": 149,
+      "medianMs": 16.7,
+      "p95Ms": 16.7,
+      "maxMs": 16.8
+    }
+  },
+  "detectedMode": "production build",
+  "entryHTMLSha256": "31de3f19be4935f79b8a8106b50d6e1b0f92611ec3a54f57b6d9eaf54ad4112a",
+  "gitHeadAtStart": "8786342164c476f7de9f070d1390748aca948a39",
+  "sourceHashesAtStart": {
+    "src/App.jsx": "84165c37727b4362b87baf2c8887d20172b7e2fcf63c8c31615daace375cd501",
+    "src/Canvas.jsx": "f48ae054460bffb21663cf8ea5c1d73249a9af04a302e2321ba2261809190a1b",
+    "src/Editor.jsx": "7f9cb67f249cb36558d26ce4b5695945115ed4d1ff9ba458fe49f7e9b994d47c",
+    "src/core.js": "b7ec48a53f7f566b40cc998b171e9b223de3a79e3eeb27901a1f5107fb3afb28",
+    "src/styles.css": "1552ac5d8365794286b761fdefae60e97b43dbc76ed71fc1297e0fed200afe77",
+    "src/canvas.css": "cf0830813d21a42db96cee7aa48ecd878a9b2daea95b018a19d924d02f8a8fc3",
+    "src/editor.css": "0e9b9b2b3411fac378792d7352141b5d66ab4ac8f38a76fc96a0eb217ffd7328"
+  },
+  "servedAssetHashes": {
+    "/assets/index-BFuZILOn.js": "b0d7827aa87d39c3d7f2c62c4c9a27e1b285371f332e50ba3b9b3c0d93ce6881",
+    "/assets/index-B_vAKCBo.css": "a98d3d12f3049c9741505c9756e3fff87ab5c67667c98d9191486e047f0d0e1e"
+  },
+  "chromiumVersion": "153.0.8010.12",
+  "cardReadingScroll": {
+    "zoom": 1.2,
+    "first": {
+      "scrollTop": 160,
+      "scrollHeight": 572,
+      "clientHeight": 269,
+      "visibleBlocks": [
+        {
+          "id": "source-passage",
+          "text": "Copper lantern protocol: keep a seat available without requiring a purchase. Record the arrival route, the posted closing time, and who maintains the invitation before recommending a public trial."
+        },
+        {
+          "id": "source-quote",
+          "text": "A doorway can welcome someone without demanding a story in return."
+        },
+        {
+          "id": "source-method",
+          "text": "Separate permission to arrive from pressure to participate. Compare a posted invitation with a staffed welcome, document the access barriers, and publish a stopping rule before a future trial."
+        }
+      ]
+    },
+    "peer": {
+      "scrollTop": 70,
+      "scrollHeight": 572,
+      "clientHeight": 269,
+      "visibleBlocks": [
+        {
+          "id": "source-heading",
+          "text": "An invitation with an honest boundary"
+        },
+        {
+          "id": "source-passage",
+          "text": "Copper lantern protocol: keep a seat available without requiring a purchase. Record the arrival route, the posted closing time, and who maintains the invitation before recommending a public trial."
+        },
+        {
+          "id": "source-quote",
+          "text": "A doorway can welcome someone without demanding a story in return."
+        }
+      ]
+    },
+    "verifiedAfter": [
+      "open/back",
+      "offscreen culling/remount",
+      "reload"
+    ],
+    "sourceIdentity": "Both placements show document source; view offsets are independent."
+  },
+  "relationshipGeometry": {
+    "before": "M 355 205 C 390 205, 410 205, 445 205",
+    "after": "M 425 252.57142857142856 C 460 252.57142857142856, 410 247.42857142857144, 445 247.42857142857144",
+    "undo": "M 355 205 C 390 205, 410 205, 445 205",
+    "beforeImage": "/tmp/opencode/margin-check-relationship-before.png",
+    "afterImage": "/tmp/opencode/margin-check-relationship-dragged.png",
+    "screenshotComparison": "PNG SHA-256 differs; SVG d and card style restore exactly after undo"
+  },
+  "externalLink": {
+    "url": "https://example.org/margin-browser-source?study=threshold#evidence",
+    "navigation": "Real anchor click to a new tab; external response is a local Playwright route fixture, not a live network measurement."
+  },
+  "markdownExport": {
+    "filename": "Markdown export study.md",
+    "utf8Bytes": 412,
+    "sha256": "7fe4b3f9cd16c60c1f4c43a6ee309bcb11eb144e78a4f3a745ddf6885ceaf065",
+    "destinationDocumentId": "cost",
+    "destinationBlockId": "cost-passage",
+    "contents": "# Markdown export study\n\n## Edited export heading\n\nCopper lantern export revision: keep the entry step-free.\n\n> A doorway can welcome someone without demanding a story in return.\n\n- Budget for a paid host before expanding.\n\n- [x] Confirm the accessible arrival route\n\n````\nprotocol = \"reversible\";\n```literal fence```\nreview = \"host funded\";\n````\n\n[Compare the cost of a staffed invitation.](#cost/cost-passage)\n",
+    "file": "/tmp/opencode/margin-check-document-export.md"
+  },
+  "svgExport": {
+    "filename": "Research desk.svg",
+    "utf8Bytes": 5279,
+    "sha256": "6ba270e18bb15e0cb5927ae478f0ac34ae5e5a440c4cffe7ed85e1ea4ab78fd3",
+    "file": "/tmp/opencode/margin-check-board-export.svg",
+    "parsed": {
+      "parserErrors": [],
+      "root": "svg",
+      "namespace": "http://www.w3.org/2000/svg",
+      "width": 860,
+      "height": 929,
+      "viewBox": [
+        -30,
+        -75,
+        860,
+        929
+      ],
+      "texts": [
+        "Research desk / Margin",
+        "Access & care <review>",
+        "DOCUMENT",
+        "Threshold & care",
+        "An invitation with an honest boundary",
+        "<script>window.svgProbe=1</script> & idea A",
+        "doorway can welcome someone without demanding",
+        "a story in return. Separate permission to",
+        "arrive from pressure to participate. Compare",
+        "a posted invitation with a staffed welcome,",
+        "document the access barriers, and publish a",
+        "stopping rule before a future trial. Compare",
+        "the cost of a staffed invitation.",
+        "DOCUMENT",
+        "The cost of welcome",
+        "Paid care is part of the offer A free seat is",
+        "not free to maintain. Budget for cleaning,",
+        "predictable host shifts, accessible toilets,",
+        "and an agreed route for reporting problems",
+        "without making visitors responsible for",
+        "unpaid work.",
+        "IMAGE",
+        "local-boundary.png",
+        "1",
+        "Follow the thread / Relationship key",
+        "1.",
+        "supports / Paid care & access <not markup>"
+      ],
+      "metadata": [
+        "supports / Paid care & access <not markup>",
+        "Threshold & care\nAn invitation with an honest boundary <script>window.svgProbe=1</script> & idea A doorway can welcome someone without demanding a story in return. Separate permission to arrive from pressure to participate. Compare a posted invitation with a staffed welcome, document the access barriers, and publish a stopping rule before a future trial. Compare the cost of a staffed invitation.",
+        "The cost of welcome\nPaid care is part of the offer A free seat is not free to maintain. Budget for cleaning, predictable host shifts, accessible toilets, and an agreed route for reporting problems without making visitors responsible for unpaid work.",
+        "local-boundary.png\nlocal-boundary.png",
+        "supports / Paid care & access <not markup>"
+      ],
+      "source": {
+        "x": 25,
+        "y": 35,
+        "width": 330,
+        "height": 340
+      },
+      "destination": {
+        "x": 445,
+        "y": 35,
+        "width": 330,
+        "height": 340
+      },
+      "frame": {
+        "x": 0,
+        "y": -15,
+        "width": 800,
+        "height": 415
+      },
+      "images": [
+        {
+          "x": 419,
+          "y": 513,
+          "width": 306,
+          "height": 208,
+          "href": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAACQCAIAAAC5w3GfAAACNklEQVR4nO3asTEEABCG0WtOrgcBuT7UoBD1CCRGZkQKEBh3x67v3swrYGf2C//D69szZBzGL4AzEjQpgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBkyJoUn4c9PXtFfwZQZMiaFIETYqgSRE0KYImRdCkCJoUQZMiaFIETcqKoD/eX+BbgiZF0KQImhRBkyJoUgRNiqBJETQpgiZF0KQImhRBk1IL+unxZonx114mQQs6RdCCThH0oqDvH+74StArCFrQgp6vZyFBryBoQQt6vp6FBL2CoAUt6Pl6FhL0CkcEzekELegUQQs6RdCCThG0oFMELegUQQs6RdCCThG0oFMELegUQQs6RdCCThG0oFMELegUQQs6RdCLgh5fHu8k6BUELWhBz9ezkKBXELSgBT1fz0KCXkHQghb0fD0LCXqFI4LmdIIWdIqgBZ0iaEGnCFrQKYIWdIqgBZ0iaEGnCFrQKYIWdIqgBZ0iaEGnCFrQKYIWdIqgBZ0i6EVBjy+PdxL0CoIWtKDn61lI0CsIWtCCnq9nIUGvIGhBC3q+noUEvcIRQXM6QQs6RdCCThG0oFMELegUQQs6pRY0F07QpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEn5N0HDuQiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSfj1o2EzQpAiaFEGTImhSBE2KoEkRNCmCJkXQpAiaFEGTImhSBE2KoEkRNCmfhXg3AylOz1AAAAAASUVORK5CYII="
+        }
+      ],
+      "directedPaths": [
+        {
+          "d": "M355,205 L445,205",
+          "marker": "url(#arrow)"
+        }
+      ],
+      "markers": [
+        {
+          "id": "arrow",
+          "d": "M0 0L10 5L0 10",
+          "fill": "#8f9d75"
+        }
+      ],
+      "executableElements": [],
+      "unsafeAttributes": []
+    },
+    "rendering": {
+      "complete": true,
+      "naturalWidth": 860,
+      "naturalHeight": 929,
+      "embeddedPixel": [
+        80,
+        103,
+        69,
+        255
+      ],
+      "labelLayout": {
+        "text": "supports / Paid care & access <not markup>",
+        "x": 22,
+        "y": 802,
+        "width": 216.453125,
+        "height": 12,
+        "occludedByLaterCards": []
+      },
+      "scriptExecuted": false,
+      "scriptElements": 0
+    },
+    "screenshot": "/tmp/opencode/margin-check-board-svg-render.png"
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "documentWidth": 390,
+    "boxes": [
+      {
+        "selector": ".main-shell",
+        "x": 0,
+        "y": 0,
+        "right": 390,
+        "bottom": 844
+      },
+      {
+        "selector": ".spatial-canvas",
+        "x": 0,
+        "y": 200,
+        "right": 390,
+        "bottom": 817
+      },
+      {
+        "selector": ".canvas-toolbar",
+        "x": 51,
+        "y": 740,
+        "right": 339,
+        "bottom": 787
+      },
+      {
+        "selector": ".canvas-zoom",
+        "x": 228,
+        "y": 686,
+        "right": 378,
+        "bottom": 726
+      }
+    ],
+    "transition": "0s"
+  },
+  "finishedAt": "2026-09-06T16:48:52.134Z",
+  "sourceChangedDuringRun": [],
+  "summary": {
+    "scenarios": 22,
+    "passedScenarios": 22,
+    "failedScenarios": 0,
+    "assertions": 74,
+    "passedAssertions": 74,
+    "failedAssertions": 0,
+    "browserErrors": 0
+  },
+  "findings": []
+}

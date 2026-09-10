@@ -1,0 +1,81 @@
+.index {
+  min-height: 100svh;
+  max-width: 830px;
+  margin: auto;
+  padding: 100px 36px 40px;
+  color: #242522;
+}
+.label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+.index h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+  font-weight: 600;
+  margin: 25px 0 15px;
+}
+.index > p {
+  color: #73736e;
+  font-size: 15px;
+}
+.index nav {
+  margin-top: 52px;
+  border-top: 1px solid #dadad5;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 4px;
+  border-bottom: 1px solid #dadad5;
+  transition:
+    padding 0.2s,
+    background 0.2s;
+}
+.link:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #f7f7f4;
+}
+.number {
+  font:
+    11px var(--font-mono),
+    monospace;
+  color: #777;
+}
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.name {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  flex: 1;
+}
+.name span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #71716a;
+  margin-top: 4px;
+}
+.index footer {
+  margin-top: 38px;
+  color: #777;
+  font-size: 11px;
+}
+@media (max-width: 600px) {
+  .index {
+    padding: 64px 24px 32px;
+  }
+  .link {
+    gap: 17px;
+  }
+}

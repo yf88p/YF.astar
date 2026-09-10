@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify Linux
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.x'
+          cache: true
+      - name: Download Modules
+        run: go mod download
+      - name: Build Native Binary
+        env:
+          CGO_ENABLED: '0'
+        run: go build -trimpath -ldflags='-s -w' -o automator ./cmd/automator
+      - name: Test
+        run: go test ./...
+      - name: Race Test
+        env:
+          CGO_ENABLED: '1'
+        run: go test -race ./...
+      - name: Vet
+        run: go vet ./...
+
+  cross-compile:
+    name: Compile ${{ matrix.goos }} (${{ matrix.goarch }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - goos: darwin
+            goarch: amd64
+            output: automator-darwin-amd64
+          - goos: darwin
+            goarch: arm64
+            output: automator-darwin-arm64
+          - goos: windows
+            goarch: amd64
+            output: automator-windows-amd64.exe
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.x'
+          cache: true
+      - name: Download Modules
+        run: go mod download
+      - name: Cross-Compile Without CGO
+        env:
+          CGO_ENABLED: '0'
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+          OUTPUT: ${{ matrix.output }}
+        run: go build -trimpath -ldflags='-s -w' -o "$OUTPUT" ./cmd/automator

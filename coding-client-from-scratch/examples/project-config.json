@@ -1,0 +1,11 @@
+{
+  "mode": "plan",
+  "instructions": "Read the implementation before proposing changes. Preserve unrelated work, make focused edits only when requested, and report which checks actually ran. Do not claim unavailable tooling succeeded.",
+  "templates": {
+    "architecture": "Explain this workspace's entry points, control flow, persistence, and trust boundaries. Cite implementation files and do not edit them."
+  },
+  "extensions": [
+    "examples/extensions/review",
+    "examples/extensions/whitespace"
+  ]
+}

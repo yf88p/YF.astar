@@ -1,0 +1,71 @@
+{
+  "model": "sonnet",
+  "mode": "plan",
+  "thinking": "off",
+  "maxTurns": 40,
+  "retries": 3,
+  "steering": "steer",
+  "providers": {
+    "anthropic": {
+      "type": "anthropic",
+      "baseURL": "https://api.anthropic.com/v1",
+      "apiKeyEnv": "ANTHROPIC_API_KEY"
+    },
+    "openai": {
+      "type": "openai",
+      "baseURL": "https://api.openai.com/v1",
+      "apiKeyEnv": "OPENAI_API_KEY"
+    },
+    "local": {
+      "type": "openai",
+      "baseURL": "http://127.0.0.1:8080/v1",
+      "apiKeyEnv": "KILN_LOCAL_API_KEY"
+    }
+  },
+  "models": [
+    {
+      "id": "claude-sonnet-4-5",
+      "provider": "anthropic",
+      "name": "Claude Sonnet 4.5",
+      "contextWindow": 200000,
+      "maxOutput": 16384,
+      "capabilities": {
+        "tools": true,
+        "images": true,
+        "reasoning": true
+      },
+      "pricing": {
+        "input": 3,
+        "output": 15,
+        "cacheRead": 0.3,
+        "cacheWrite": 3.75
+      }
+    },
+    {
+      "id": "qwen",
+      "provider": "local",
+      "name": "Local Qwen (illustrative ID and limits)",
+      "contextWindow": 32768,
+      "maxOutput": 4096,
+      "capabilities": {
+        "tools": true,
+        "images": false,
+        "reasoning": false
+      }
+    }
+  ],
+  "aliases": {
+    "sonnet": "anthropic/claude-sonnet-4-5",
+    "gpt": "openai/gpt-4.1",
+    "mini": "openai/o4-mini",
+    "qwen": "local/qwen"
+  },
+  "enabledModels": ["sonnet", "openai/*", "local/qwen"],
+  "templates": {
+    "review": "Review the current changes without editing files. Report actionable correctness issues with file references and identify unverified behavior."
+  },
+  "permissions": [],
+  "extensions": [],
+  "servers": [],
+  "lsp": []
+}

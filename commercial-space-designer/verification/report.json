@@ -1,0 +1,118 @@
+{
+  "applicationURL": "http://localhost:5285/",
+  "date": "2026-09-06T09:48:37.681Z",
+  "browser": "153.0.8010.12",
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics",
+    "logicalCPUs": 16,
+    "memoryGB": 12
+  },
+  "rendering": "Headless Chromium, ANGLE SwiftShader software WebGL; 1440x1000 viewport, DPR 1; shared host",
+  "scene": {
+    "walls": 40,
+    "furniture": 100,
+    "triangles": 120970,
+    "drawCalls": 23,
+    "geometries": 65,
+    "textures": 5
+  },
+  "frames": {
+    "samples": 60,
+    "medianMs": 128.40000000596046,
+    "p95Ms": 269.70000000298023,
+    "minMs": 13.400000005960464,
+    "maxMs": 402.5
+  },
+  "edits": [
+    {
+      "browserRoundTripMs": 100.21859299999778,
+      "rebuildMs": 21.700000002980232
+    },
+    {
+      "browserRoundTripMs": 73.7958149999904,
+      "rebuildMs": 11.799999997019768
+    },
+    {
+      "browserRoundTripMs": 71.8346259999962,
+      "rebuildMs": 18.200000002980232
+    },
+    {
+      "browserRoundTripMs": 46.676728000005824,
+      "rebuildMs": 13.400000005960464
+    },
+    {
+      "browserRoundTripMs": 58.25950400000147,
+      "rebuildMs": 12
+    },
+    {
+      "browserRoundTripMs": 45.31996200000867,
+      "rebuildMs": 9.900000005960464
+    },
+    {
+      "browserRoundTripMs": 52.92591999999422,
+      "rebuildMs": 9.599999994039536
+    },
+    {
+      "browserRoundTripMs": 58.81678500000271,
+      "rebuildMs": 13.5
+    },
+    {
+      "browserRoundTripMs": 54.95852400000149,
+      "rebuildMs": 10.699999988079071
+    },
+    {
+      "browserRoundTripMs": 49.38671299999987,
+      "rebuildMs": 8.400000005960464
+    }
+  ],
+  "memoryAfter": {
+    "geometries": 65,
+    "textures": 5
+  },
+  "checks": [
+    "cafe opens with linked editable plan and real canvas",
+    "numeric wall edit changes shared endpoint",
+    "hosted openings preserved",
+    "room area updated analytically to trapezoid 84 m2",
+    "structural undo restores baseline endpoint",
+    "redo restores derived budget",
+    "door tool adds hosted doorway",
+    "window tool adds elevated opening",
+    "raycast through actual door mesh hole has no wall face",
+    "raycast through elevated window has no wall face",
+    "solid wall remains under window",
+    "walkthrough acquires actual pointer lock",
+    "open doorway permits real first-person traversal",
+    "closed doorway stops real walkthrough before wall",
+    "window is not a walkable portal",
+    "table in door region raises clearance warning",
+    "moving furniture clears its door warning",
+    "pointer drag changes furniture coordinates",
+    "completed drag is one full undo transaction",
+    "3D raycast selects same furniture in inspector",
+    "linked plan marks the selected furniture",
+    "finishes, light settings and saved view persist",
+    "alternative does not mutate baseline",
+    "comparison shows independently calculated budget deltas",
+    "wall deletion explicitly removes attached openings",
+    "wall deletion undo restores every attachment",
+    "autosaved project survives reload",
+    "malformed import leaves current project intact",
+    "valid JSON reimport preserves complete project",
+    "SVG includes full precision measured wall data",
+    "CSV contains quantities and stated currency",
+    "current-scene PNG export is a real image",
+    "blank project wall drawing creates analytical 30 m2 room",
+    "catalog places physical furniture into a new design",
+    "Atelier No. 04 loads its own editable furnished scene",
+    "Common Ground loads its own editable furnished scene",
+    "mobile layout has no horizontal overflow",
+    "mobile can open numeric wall inspector",
+    "isolated 4x3 fixture reports exactly 18 m2 for two costed faces",
+    "the exact numerical fixture has both real mesh holes and a solid window sill",
+    "exact 1x2 meter fixture doorway is traversed with actual keyboard movement",
+    "performance workload is 40 walls and 100 visible furnishings",
+    "repeated edits release obsolete geometries"
+  ],
+  "errors": []
+}

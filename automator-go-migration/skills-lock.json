@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "herdr": {
+      "source": "ogulcancelik/herdr",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "69d3762de6941e5632e7cbcaeea3584b47ce906a9275afb333d5405ff5480b80"
+    }
+  }
+}

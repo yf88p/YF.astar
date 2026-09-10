@@ -1,0 +1,3220 @@
+{
+  "generatedAt": "2026-09-06T16:56:16.964Z",
+  "checks": [
+    {
+      "name": "Initial desktop WebGL render, aspect, and nonempty pixels",
+      "status": "passed",
+      "durationMs": 3276.8754419999996,
+      "evidence": {
+        "mode": "ready",
+        "stats": {
+          "views": 2,
+          "maxDepth": 1,
+          "targetBytes": 4407296,
+          "drawCalls": 99,
+          "triangles": 11208,
+          "renderMs": 5.5999999940395355
+        },
+        "aspect": 1.9039855072463767,
+        "css": [
+          1051,
+          552
+        ],
+        "overflow": false,
+        "pixels": {
+          "width": 1051,
+          "height": 552,
+          "hash": 2925676064,
+          "center": [
+            91,
+            141,
+            133,
+            255
+          ],
+          "nonblackFraction": 0.8978129869413533,
+          "glError": 0
+        },
+        "screenshot": {
+          "name": "desktop-1440x1000",
+          "file": "/tmp/opencode/parallax-browser/desktop-1440x1000.png",
+          "sha256": "01d4876f57aa22a4505c5a935373ea8ad162cc0328684a31bf687e5d2b991726",
+          "bytes": 702830
+        }
+      }
+    },
+    {
+      "name": "Real Enter click captures pointer; keyboard, look, Escape, frozen inspect, resume",
+      "status": "passed",
+      "durationMs": 8562.852527000001,
+      "evidence": {
+        "initial": {
+          "position": [
+            1.7,
+            0.85,
+            4.8
+          ],
+          "yaw": 0.17
+        },
+        "moved": {
+          "position": [
+            1.0948911315037126,
+            0.85,
+            1.274891817020136
+          ],
+          "yaw": 0.16999999999999993
+        },
+        "lookBefore": 0.17,
+        "lookSamples": [
+          {
+            "movement": [
+              0,
+              0
+            ],
+            "yaw": 0.17,
+            "pitch": 0
+          },
+          {
+            "movement": [
+              650,
+              450
+            ],
+            "yaw": -1.1300000000000001,
+            "pitch": -0.9
+          },
+          {
+            "movement": [
+              -650,
+              -450
+            ],
+            "yaw": 0.16999999999999993,
+            "pitch": 0
+          },
+          {
+            "movement": [
+              0,
+              0
+            ],
+            "yaw": 0.16999999999999993,
+            "pitch": 0
+          },
+          {
+            "movement": [
+              710,
+              465
+            ],
+            "yaw": -1.25,
+            "pitch": -0.93
+          },
+          {
+            "movement": [
+              -710,
+              -465
+            ],
+            "yaw": 0.16999999999999993,
+            "pitch": 0
+          },
+          {
+            "movement": [
+              0,
+              0
+            ],
+            "yaw": 0.16999999999999993,
+            "pitch": 0
+          },
+          {
+            "movement": [
+              0,
+              0
+            ],
+            "yaw": 0.16999999999999993,
+            "pitch": 0
+          },
+          {
+            "movement": [
+              0,
+              0
+            ],
+            "yaw": 0.16999999999999993,
+            "pitch": 0
+          }
+        ],
+        "beforeOrbit": [
+          10.199999999999998,
+          12.499999999999998,
+          11.899999999999997
+        ],
+        "afterOrbit": [
+          -4.9004878708405855,
+          19.334287766795516,
+          4.957156289534554
+        ],
+        "frozenExactly": true,
+        "resumed": true,
+        "pauseKey": "p"
+      }
+    },
+    {
+      "name": "Chamber 1 actual Watch Solution input replay reaches goal",
+      "status": "passed",
+      "durationMs": 9364.760545000001,
+      "evidence": {
+        "acceleration": "Only replay.update(1/120), with rendered stage boundaries and milestone screenshots",
+        "stages": [
+          {
+            "milestone": "stage",
+            "label": "Look down and pick up the cube",
+            "stepIndex": 1,
+            "elapsed": 1.775,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": null,
+            "player": {
+              "room": "atrium",
+              "position": [
+                -0.7813464090994967,
+                0.85,
+                2.6164151599924432
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "atrium",
+                "position": [
+                  -0.8,
+                  0.35,
+                  1
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "pickup",
+            "label": "Lift the cube in front of you",
+            "stepIndex": 2,
+            "elapsed": 1.8833333333333333,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [],
+              "room": "atrium"
+            },
+            "player": {
+              "room": "atrium",
+              "position": [
+                -0.7813464090994967,
+                0.85,
+                2.6164151599924432
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "atrium",
+                "position": [
+                  -0.7851777147598715,
+                  1.250826749089145,
+                  0.7959664951925541
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-1-pickup",
+              "file": "/tmp/opencode/parallax-browser/solution-1-pickup.png",
+              "sha256": "78171762f93ea4fb1cd04dca5d611168f074445d69d216179cc1d44ec8eadbf4",
+              "bytes": 827304,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "stage",
+            "label": "Carry the cube to the north portal",
+            "stepIndex": 3,
+            "elapsed": 2.1916666666666664,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [],
+              "room": "atrium"
+            },
+            "player": {
+              "room": "atrium",
+              "position": [
+                -0.7813464090994967,
+                0.85,
+                2.6164151599924432
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "atrium",
+                "position": [
+                  -0.7813853098260061,
+                  1.517266979994414,
+                  0.7326402652408743
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "cube-straddle",
+            "label": "Carry the cube to the north portal",
+            "stepIndex": 3,
+            "elapsed": 5.35,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [],
+              "room": "atrium"
+            },
+            "player": {
+              "room": "atrium",
+              "position": [
+                -2.6932987048775807,
+                0.85,
+                -4.774096633715852
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "atrium",
+                "position": [
+                  -2.6906182952495796,
+                  1.5199999999999991,
+                  -6.648160172070002
+                ],
+                "straddle": "delivery-teal"
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-1-cube-straddle",
+              "file": "/tmp/opencode/parallax-browser/solution-1-cube-straddle.png",
+              "sha256": "ccf0102b1bd54deeaec8422874462d2fb7988dc09ef6f85be26565d6dd064f0d",
+              "bytes": 585605,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "portal-crossing",
+            "label": "Carry the cube through the portal",
+            "stepIndex": 4,
+            "elapsed": 5.716666666666667,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 1,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [
+                "delivery-teal"
+              ],
+              "room": "annex"
+            },
+            "player": {
+              "room": "atrium",
+              "position": [
+                -2.695862905351133,
+                0.85,
+                -5.670349531090027
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.004605712152546,
+                  1.5199999999999991,
+                  5.645265396531249
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-1-portal-crossing",
+              "file": "/tmp/opencode/parallax-browser/solution-1-portal-crossing.png",
+              "sha256": "8448d91b096645c45f7cc71d6173913e51e34808a8179011afaf89c795058114",
+              "bytes": 522068,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "stage",
+            "label": "Carry the cube over the pressure plate",
+            "stepIndex": 5,
+            "elapsed": 6.175,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [],
+              "room": "annex"
+            },
+            "player": {
+              "room": "annex",
+              "position": [
+                22.001232406009795,
+                0.85,
+                5.972826789456444
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.00165763862621,
+                  1.5199999999999991,
+                  4.2884885623088875
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Lower the cube onto the plate",
+            "stepIndex": 6,
+            "elapsed": 8.133333333333333,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [],
+              "room": "annex"
+            },
+            "player": {
+              "room": "annex",
+              "position": [
+                22.00000729706332,
+                0.85,
+                1.9244238763671013
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.000009875277286,
+                  1.5199999999999991,
+                  0.04862890667011694
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Release the cube",
+            "stepIndex": 7,
+            "elapsed": 8.741666666666667,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": {
+              "id": "delivery-cube",
+              "distance": 1.8844244657744893,
+              "path": [],
+              "room": "annex"
+            },
+            "player": {
+              "room": "annex",
+              "position": [
+                22.00000729706332,
+                0.85,
+                1.9244238763671013
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.000007297364217,
+                  0.6166642235231372,
+                  0.27065991038919895
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "door-open",
+            "label": "Wait for the weight to open the door",
+            "stepIndex": 8,
+            "elapsed": 9.291666666666666,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "annex",
+              "position": [
+                22.00000729706332,
+                0.85,
+                1.9244238763671013
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.000007295990198,
+                  0.49000099999999996,
+                  0.2707782527789161
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-1-door-open",
+              "file": "/tmp/opencode/parallax-browser/solution-1-door-open.png",
+              "sha256": "47ebed24ea84a496a714775053c8848425f2b0d74d02d65247a48369bfd7b2d5",
+              "bytes": 828657,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "stage",
+            "label": "Walk through the raised door",
+            "stepIndex": 10,
+            "elapsed": 10.466666666666667,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "annex",
+              "position": [
+                23.575351189653567,
+                0.85,
+                1.9003762639013242
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.000007295947576,
+                  0.49000099999999996,
+                  0.2707819250212947
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Enter the goal",
+            "stepIndex": 11,
+            "elapsed": 13.433333333333334,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "annex",
+              "position": [
+                23.599913171709343,
+                0.85,
+                -5.075340363432711
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.000007295947576,
+                  0.49000099999999996,
+                  0.2707819260052503
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "goal",
+            "label": "Solution complete",
+            "stepIndex": 11,
+            "elapsed": 13.583333333333334,
+            "done": true,
+            "error": null,
+            "completed": true,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "annex",
+              "position": [
+                23.256203995737568,
+                0.85,
+                -5.08063799052534
+              ]
+            },
+            "cubes": [
+              {
+                "id": "delivery-cube",
+                "room": "annex",
+                "position": [
+                  22.000007295947576,
+                  0.49000099999999996,
+                  0.2707819260052503
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "delivery-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "delivery-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-1-goal",
+              "file": "/tmp/opencode/parallax-browser/solution-1-goal.png",
+              "sha256": "ed7d95676b0301b4eb5c8e063e2b817621919184e00d6d2eb90f5597509b6e36",
+              "bytes": 783025,
+              "exactSimulationTick": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chamber 2 actual Watch Solution input replay reaches goal",
+      "status": "passed",
+      "durationMs": 4138.590492000003,
+      "evidence": {
+        "acceleration": "Only replay.update(1/120), with rendered stage boundaries and milestone screenshots",
+        "stages": [
+          {
+            "milestone": "stage",
+            "label": "Let gravity carry you through the floor portal",
+            "stepIndex": 1,
+            "elapsed": 1.95,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": null,
+            "player": {
+              "room": "drop-shaft",
+              "position": [
+                0,
+                0.18450099999999298,
+                0.025083627141671838
+              ]
+            },
+            "cubes": [],
+            "plates": [],
+            "doors": []
+          },
+          {
+            "milestone": "portal-crossing",
+            "label": "Let gravity carry you through the floor portal",
+            "stepIndex": 1,
+            "elapsed": 1.9749999999999999,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 1,
+            "held": null,
+            "player": {
+              "room": "landing-hall",
+              "position": [
+                22,
+                4.476215409211617,
+                6.854138499999994
+              ]
+            },
+            "cubes": [],
+            "plates": [],
+            "doors": [],
+            "screenshot": {
+              "name": "solution-2-portal-crossing",
+              "file": "/tmp/opencode/parallax-browser/solution-2-portal-crossing.png",
+              "sha256": "4e52c5799d6dc6913ddced2a21267860d5af95fa5ba555aa80850fad7a9fcd3b",
+              "bytes": 528518,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "goal",
+            "label": "Solution complete",
+            "stepIndex": 1,
+            "elapsed": 2.475,
+            "done": true,
+            "error": null,
+            "completed": true,
+            "crossings": 1,
+            "held": null,
+            "player": {
+              "room": "landing-hall",
+              "position": [
+                22,
+                3.2282586362774164,
+                0.27326350000001653
+              ]
+            },
+            "cubes": [],
+            "plates": [],
+            "doors": [],
+            "screenshot": {
+              "name": "solution-2-goal",
+              "file": "/tmp/opencode/parallax-browser/solution-2-goal.png",
+              "sha256": "2d70071dfd658a4c096ce51e6d5a3e8c4097c846475415274640c342678f4042",
+              "bytes": 298111,
+              "exactSimulationTick": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chamber 3 actual Watch Solution input replay reaches goal",
+      "status": "passed",
+      "durationMs": 8706.748238,
+      "evidence": {
+        "acceleration": "Only replay.update(1/120), with rendered stage boundaries and milestone screenshots",
+        "stages": [
+          {
+            "milestone": "stage",
+            "label": "Look down and pick up the cube",
+            "stepIndex": 1,
+            "elapsed": 1.4,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": null,
+            "player": {
+              "room": "loop-origin",
+              "position": [
+                1.9777093753198463,
+                0.85,
+                3.110030781106069
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-origin",
+                "position": [
+                  2,
+                  0.35,
+                  1.5
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "pickup",
+            "label": "Lift the cube in front of you",
+            "stepIndex": 2,
+            "elapsed": 1.4333333333333333,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-origin"
+            },
+            "player": {
+              "room": "loop-origin",
+              "position": [
+                1.9777093753198463,
+                0.85,
+                3.110030781106069
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-origin",
+                "position": [
+                  1.9916897059103316,
+                  0.6984168274187414,
+                  1.4277384123614032
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-3-pickup",
+              "file": "/tmp/opencode/parallax-browser/solution-3-pickup.png",
+              "sha256": "00285395229fa96c974fb994dfa95e9ed2d83a926ec07c529c807bf4ee8361a0",
+              "bytes": 823340,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "stage",
+            "label": "Carry the cube to the north portal",
+            "stepIndex": 3,
+            "elapsed": 1.8166666666666667,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-origin"
+            },
+            "player": {
+              "room": "loop-origin",
+              "position": [
+                1.9777093753198463,
+                0.85,
+                3.110030781106069
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-origin",
+                "position": [
+                  1.9777558535867106,
+                  1.5172686080848103,
+                  1.233988090213837
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Carry the cube through the portal",
+            "stepIndex": 4,
+            "elapsed": 4.85,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-origin"
+            },
+            "player": {
+              "room": "loop-origin",
+              "position": [
+                0.006667328558207576,
+                0.85,
+                -3.776704643189795
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-origin",
+                "position": [
+                  0.009023044792089867,
+                  1.5199999999999991,
+                  -5.645162844384786
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "cube-straddle",
+            "label": "Carry the cube through the portal",
+            "stepIndex": 4,
+            "elapsed": 4.875,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 0,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-origin"
+            },
+            "player": {
+              "room": "loop-origin",
+              "position": [
+                0.006629937592049134,
+                0.85,
+                -3.7925379323730346
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-origin",
+                "position": [
+                  0.008288171702159657,
+                  1.5199999999999991,
+                  -5.648916154314391
+                ],
+                "straddle": "loop-a-north"
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-3-cube-straddle",
+              "file": "/tmp/opencode/parallax-browser/solution-3-cube-straddle.png",
+              "sha256": "37ca05f3bb2a7849d7294a27be20e0e58019c2b5fa0082398719836b759fb3a7",
+              "bytes": 611154,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "portal-crossing",
+            "label": "Carry the cube through the portal",
+            "stepIndex": 4,
+            "elapsed": 5.191666666666666,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 1,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [
+                "loop-a-north"
+              ],
+              "room": "loop-relay"
+            },
+            "player": {
+              "room": "loop-origin",
+              "position": [
+                0.004497668548224376,
+                0.85,
+                -4.695452081322518
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  22.005012661037558,
+                  1.5199999999999991,
+                  5.628716300461453
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-3-portal-crossing",
+              "file": "/tmp/opencode/parallax-browser/solution-3-portal-crossing.png",
+              "sha256": "8e01d85de1a2ede1f93baab3d63b696dbca040e8493e6f04b8294b2cbbe6856b",
+              "bytes": 566337,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "stage",
+            "label": "Carry the cube over the pressure plate",
+            "stepIndex": 5,
+            "elapsed": 5.641666666666667,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-relay"
+            },
+            "player": {
+              "room": "loop-relay",
+              "position": [
+                22.00135728737361,
+                0.85,
+                5.972746407998785
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  22.001825638976296,
+                  1.5199999999999991,
+                  4.296127430888568
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Lower the cube onto the plate",
+            "stepIndex": 6,
+            "elapsed": 8.441666666666666,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-relay"
+            },
+            "player": {
+              "room": "loop-relay",
+              "position": [
+                19.01127541500348,
+                0.85,
+                0.1219313598413855
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.015259265265144,
+                  1.5199999999999991,
+                  -1.747008783512931
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Release the cube",
+            "stepIndex": 7,
+            "elapsed": 9.05,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": {
+              "id": "loop-cube",
+              "distance": 1.8766889715451835,
+              "path": [],
+              "room": "loop-relay"
+            },
+            "player": {
+              "room": "loop-relay",
+              "position": [
+                19.01127541500348,
+                0.85,
+                0.1219313598413855
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.01127587994701,
+                  0.6203723841912754,
+                  -1.5250440635565872
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": false
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 0,
+                  "active": false
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "door-open",
+            "label": "Wait for the weight to open the door",
+            "stepIndex": 8,
+            "elapsed": 9.608333333333333,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "loop-relay",
+              "position": [
+                19.01127541500348,
+                0.85,
+                0.1219313598413855
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.011273695397428,
+                  0.49000099999999996,
+                  -1.5249223347008747
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-3-door-open",
+              "file": "/tmp/opencode/parallax-browser/solution-3-door-open.png",
+              "sha256": "4271811bd71e0eeef98f41751cedf8caa82c22eb54e28b9d16825f60c2c8cd64",
+              "bytes": 831681,
+              "exactSimulationTick": true
+            }
+          },
+          {
+            "milestone": "stage",
+            "label": "Walk to the violet portal",
+            "stepIndex": 10,
+            "elapsed": 11.25,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "loop-relay",
+              "position": [
+                21.97572676101964,
+                0.85,
+                0.10017811783035034
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.011273629497957,
+                  0.49000099999999996,
+                  -1.5249186626086322
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Cross into the gold gallery",
+            "stepIndex": 11,
+            "elapsed": 13.183333333333334,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 2,
+            "held": null,
+            "player": {
+              "room": "loop-relay",
+              "position": [
+                21.99984656455558,
+                0.85,
+                -3.7753462830685667
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.011273629497303,
+                  0.49000099999999996,
+                  -1.5249186625711235
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Walk to the side door",
+            "stepIndex": 12,
+            "elapsed": 13.975,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 3,
+            "held": null,
+            "player": {
+              "room": "loop-vault",
+              "position": [
+                43.99996872184366,
+                0.85,
+                5.973811938227421
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.011273629497303,
+                  0.49000099999999996,
+                  -1.5249186625711235
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "stage",
+            "label": "Enter the open side vault",
+            "stepIndex": 13,
+            "elapsed": 16.566666666666666,
+            "done": false,
+            "error": null,
+            "completed": false,
+            "crossings": 3,
+            "held": null,
+            "player": {
+              "room": "loop-vault",
+              "position": [
+                43.99999987363415,
+                0.85,
+                0.024455502005652184
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.011273629497303,
+                  0.49000099999999996,
+                  -1.5249186625711235
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ]
+          },
+          {
+            "milestone": "goal",
+            "label": "Solution complete",
+            "stepIndex": 13,
+            "elapsed": 17.483333333333334,
+            "done": true,
+            "error": null,
+            "completed": true,
+            "crossings": 3,
+            "held": null,
+            "player": {
+              "room": "loop-vault",
+              "position": [
+                46.643688874525296,
+                0.85,
+                0.006496407729486132
+              ]
+            },
+            "cubes": [
+              {
+                "id": "loop-cube",
+                "room": "loop-relay",
+                "position": [
+                  19.011273629497303,
+                  0.49000099999999996,
+                  -1.5249186625711235
+                ]
+              }
+            ],
+            "plates": [
+              [
+                "loop-plate",
+                {
+                  "active": true
+                }
+              ]
+            ],
+            "doors": [
+              [
+                "vault-door",
+                {
+                  "open": 1,
+                  "active": true
+                }
+              ]
+            ],
+            "screenshot": {
+              "name": "solution-3-goal",
+              "file": "/tmp/opencode/parallax-browser/solution-3-goal.png",
+              "sha256": "8cfa845e27ae561af9f8984fcdf65aef4d4d013e31d30c0a90b194cad62390d3",
+              "bytes": 497154,
+              "exactSimulationTick": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Depth-three recursion renders self avatar, verified by target pixel difference",
+      "status": "passed",
+      "durationMs": 4084.166916999995,
+      "evidence": {
+        "stats": {
+          "views": 4,
+          "maxDepth": 3,
+          "targetBytes": 9366160,
+          "drawCalls": 220,
+          "triangles": 27434,
+          "renderMs": 4.0999999940395355
+        },
+        "visibleTargetHashes": [
+          644858508,
+          2479694410,
+          1421432301
+        ],
+        "hiddenAvatarTargetHashes": [
+          4203935547,
+          1041792789,
+          1436416237
+        ],
+        "avatarDraws": 1,
+        "targetDimensions": [
+          [
+            1024,
+            538
+          ],
+          [
+            840,
+            441
+          ],
+          [
+            689,
+            362
+          ]
+        ],
+        "screenshot": {
+          "name": "depth-three-self-avatar",
+          "file": "/tmp/opencode/parallax-browser/depth-three-self-avatar.png",
+          "sha256": "6f66047041e915ffd0101ef8499dce00f2fdbb24db3ce12ee0604d57a77b835d",
+          "bytes": 555318
+        }
+      }
+    },
+    {
+      "name": "Source block depth occludes portal center pixel",
+      "status": "passed",
+      "durationMs": 9622.558939999995,
+      "evidence": {
+        "fixture": {
+          "block": {
+            "id": "browser-source-occluder",
+            "room": "loop-origin",
+            "position": [
+              0,
+              1.5,
+              0
+            ],
+            "size": [
+              2,
+              3,
+              0.4
+            ]
+          },
+          "material": "MeshBasicMaterial"
+        },
+        "before": {
+          "width": 1051,
+          "height": 552,
+          "hash": 1680853191,
+          "center": [
+            132,
+            195,
+            189,
+            255
+          ],
+          "nonblackFraction": 0.9166459824321902,
+          "glError": 0
+        },
+        "after": {
+          "width": 1051,
+          "height": 552,
+          "hash": 405487161,
+          "center": [
+            255,
+            0,
+            0,
+            255
+          ],
+          "nonblackFraction": 0.9179990761041934,
+          "glError": 0
+        },
+        "screenshot": {
+          "name": "occluder-after",
+          "file": "/tmp/opencode/parallax-browser/occluder-after.png",
+          "sha256": "4c544077ede38e857258400d4d10400e204c52ce9a4aaeadee52935314a7c954",
+          "bytes": 488230
+        }
+      }
+    },
+    {
+      "name": "Destination geometry behind portal plane is pixel-clipped, positive control visible inside",
+      "status": "passed",
+      "durationMs": 8874.229313999997,
+      "evidence": {
+        "baseline": {
+          "width": 1051,
+          "height": 552,
+          "hash": 1680853191,
+          "center": [
+            132,
+            195,
+            189,
+            255
+          ],
+          "nonblackFraction": 0.9166459824321902,
+          "glError": 0
+        },
+        "behind": {
+          "width": 1051,
+          "height": 552,
+          "hash": 1680853191,
+          "center": [
+            132,
+            195,
+            189,
+            255
+          ],
+          "nonblackFraction": 0.9166459824321902,
+          "glError": 0
+        },
+        "inside": {
+          "width": 1051,
+          "height": 552,
+          "hash": 2918568861,
+          "center": [
+            254,
+            55,
+            232,
+            255
+          ],
+          "nonblackFraction": 0.9167080351356196,
+          "glError": 0
+        },
+        "fixture": "Large double-sided magenta plane in relay render group at z=8 (behind destination z=6); positive control z=4. No invalid world document loaded."
+      }
+    },
+    {
+      "name": "Sub-millimeter approach retains live portal view; runtime disable restores solid rendering",
+      "status": "passed",
+      "durationMs": 1429.4857069999998,
+      "evidence": {
+        "approaches": [
+          {
+            "distance": 0.04,
+            "near": 0.008000000000001428,
+            "live": true,
+            "depth": 1,
+            "room": "a"
+          },
+          {
+            "distance": 0.015,
+            "near": 0.0029999999999999363,
+            "live": true,
+            "depth": 1,
+            "room": "a"
+          },
+          {
+            "distance": 0.004,
+            "near": 0.0007999999999999119,
+            "live": true,
+            "depth": 1,
+            "room": "a"
+          },
+          {
+            "distance": 0.0005,
+            "near": 0.00009999999999994459,
+            "live": true,
+            "depth": 1,
+            "room": "a"
+          }
+        ],
+        "after": {
+          "room": "b",
+          "cameraRoom": "b",
+          "crossings": 1
+        },
+        "disabled": true,
+        "hidden": true,
+        "enabled": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "One straddling cube has complementary clipped render meshes and reverses safely",
+      "status": "passed",
+      "durationMs": 4747.982481000006,
+      "evidence": {
+        "count": 1,
+        "id": "box",
+        "source": {
+          "mesh": true,
+          "copy": false
+        },
+        "destination": {
+          "mesh": false,
+          "copy": true
+        },
+        "sourcePlanes": [
+          [
+            {
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "constant": 5
+            }
+          ],
+          [
+            {
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "constant": 5
+            }
+          ],
+          [
+            {
+              "normal": [
+                0,
+                0,
+                1
+              ],
+              "constant": 5
+            }
+          ]
+        ],
+        "remotePlanes": [
+          [
+            {
+              "normal": [
+                0,
+                0,
+                -1
+              ],
+              "constant": 5
+            }
+          ],
+          [
+            {
+              "normal": [
+                0,
+                0,
+                -1
+              ],
+              "constant": 5
+            }
+          ],
+          [
+            {
+              "normal": [
+                0,
+                0,
+                -1
+              ],
+              "constant": 5
+            }
+          ]
+        ],
+        "portal": "pa",
+        "position": [
+          0,
+          1.53,
+          -4.849999999999999
+        ],
+        "reversal": {
+          "sameIdentity": true,
+          "straddle": null,
+          "crossings": 0,
+          "room": "a",
+          "copyVisible": false
+        },
+        "setup": "World.moveBody to straddle then reverse; complementary halfspace sample oracle also in tests/render.test.js"
+      }
+    },
+    {
+      "name": "Real E pickup/drop and touch-button throw cross portal; remote E pickup uses portal path",
+      "status": "passed",
+      "durationMs": 52954.968080000006,
+      "evidence": {
+        "releasedAtSeam": {
+          "held": null,
+          "portal": "pa",
+          "cubes": 1
+        },
+        "reversedByInput": {
+          "held": "box",
+          "room": "a",
+          "straddling": false,
+          "crossings": 0,
+          "cubes": 1
+        },
+        "held": {
+          "id": "box",
+          "distance": 1.5,
+          "path": [],
+          "room": "a"
+        },
+        "thrown": {
+          "held": null,
+          "crossings": 1,
+          "velocity": [
+            1.592040838891559e-15,
+            0,
+            -13
+          ],
+          "spin": [
+            1.3,
+            2.1,
+            0.7000000000000001
+          ]
+        },
+        "remote": {
+          "id": "box",
+          "distance": 3.2,
+          "path": [
+            "pa"
+          ],
+          "room": "b"
+        },
+        "actions": [
+          "World.moveBody straddle fixture setup",
+          "Enter real tap",
+          "E pickup",
+          "E release at seam",
+          "E pickup",
+          "S walk backward reverses held straddle",
+          "E drop",
+          "fresh local fixture",
+          "Enter real tap",
+          "E pickup",
+          "E drop",
+          "E pickup",
+          "Throw button real tap",
+          "remote fixture",
+          "Enter real tap",
+          "E through-portal pickup"
+        ],
+        "limitation": "Precision fixture uses touch mode because headless Chromium intermittently emits a cursor-warp delta after desktop pointer capture. Desktop pointer capture, keyboard walking and mouse look are tested separately."
+      }
+    },
+    {
+      "name": "Full integrated editor UI authors blank two-room mechanism, history, files, isolated playtest",
+      "status": "passed",
+      "durationMs": 50899.88640599999,
+      "evidence": {
+        "actions": [
+          "New blank (confirmed)",
+          "Add Room",
+          "Room name/translation/size inspector",
+          "Create portal pair form",
+          "Add Cube",
+          "Cube position/rotation/uniform scale inspector",
+          "Snap control",
+          "Arrow-key range move",
+          "Undo",
+          "Redo",
+          "Add Door",
+          "Add Plate",
+          "Plate door checkbox wiring",
+          "Add Goal",
+          "Goal required-door checkbox",
+          "Add Block and transform",
+          "Solve authored puzzle through public gameplay inputs",
+          "Export JSON download",
+          "New blank",
+          "Import via file chooser",
+          "Save locally",
+          "Blank then reload local save",
+          "PNG image download",
+          "Malformed file import rejection",
+          "Playtest and solve again",
+          "Return to edit"
+        ],
+        "counts": {
+          "rooms": 2,
+          "blocks": 1,
+          "portals": 2,
+          "cubes": 1,
+          "plates": 1,
+          "doors": 1,
+          "goals": 1
+        },
+        "transformed": {
+          "id": "cube-1",
+          "room": "blank-room",
+          "position": [
+            2.25,
+            1,
+            1
+          ],
+          "size": 0.8,
+          "quaternion": [
+            0,
+            0.25881904510252074,
+            0,
+            0.9659258262890683
+          ]
+        },
+        "moved": 3,
+        "firstSolution": {
+          "completed": true,
+          "plateActive": true,
+          "crossings": 2,
+          "cubeRoom": "room-1",
+          "goalRoom": "room-1",
+          "time": 15.416666666666432,
+          "method": "setInput / look / interact / step only; no body or success assignments"
+        },
+        "reloadedSolution": {
+          "completed": true,
+          "plateActive": true,
+          "crossings": 2,
+          "cubeRoom": "room-1",
+          "goalRoom": "room-1",
+          "time": 15.483333333333094,
+          "method": "setInput / look / interact / step only; no body or success assignments"
+        },
+        "imageBytes": 433282,
+        "playtest": {
+          "time": 15.549999999999757,
+          "position": [
+            20.006010183250787,
+            0.85,
+            0.9499997656112322
+          ],
+          "editorUnchanged": true,
+          "separate": true
+        },
+        "restoredExactly": true
+      }
+    },
+    {
+      "name": "Editor destination material and geometry changes appear live through portal",
+      "status": "passed",
+      "durationMs": 24660.477102000004,
+      "evidence": {
+        "before": {
+          "width": 997,
+          "height": 655,
+          "hash": 1102087161,
+          "center": [
+            164,
+            211,
+            209,
+            255
+          ],
+          "nonblackFraction": 0.9031047340494767,
+          "glError": 0
+        },
+        "after": {
+          "width": 997,
+          "height": 655,
+          "hash": 3020359812,
+          "center": [
+            98,
+            104,
+            132,
+            255
+          ],
+          "nonblackFraction": 0.9031460794597533,
+          "glError": 0
+        },
+        "afterMove": {
+          "width": 997,
+          "height": 655,
+          "hash": 1907517824,
+          "center": [
+            164,
+            211,
+            209,
+            255
+          ],
+          "nonblackFraction": 0.9031460794597533,
+          "glError": 0
+        },
+        "screenshotHashes": [
+          "192fc4f773c08379f42be734df4630201ef9d3d71fdc43eddc030ac2ed9534ae",
+          "67857faf73980272db0ad28b4dc7712ec784e3098a901c7a9e359905fada2b67"
+        ],
+        "setup": "Editor.transaction changes destination room color, adds block, then moves block. First-person render retained at unchanged spawn."
+      }
+    },
+    {
+      "name": "Mobile 390x844 initial and editor render with no horizontal overflow",
+      "status": "passed",
+      "durationMs": 37987.172964,
+      "evidence": {
+        "initial": {
+          "name": "mobile-390x844",
+          "file": "/tmp/opencode/parallax-browser/mobile-390x844.png",
+          "sha256": "553f22fd8a7fcd601f6ee731d72ea60120daaa45bc8184f45f389ecf64c7ad78",
+          "bytes": 202596
+        },
+        "editor": {
+          "name": "editor-mobile-390",
+          "file": "/tmp/opencode/parallax-browser/editor-mobile-390.png",
+          "sha256": "27a88df2d947fd7c4dda280b7d2ad962ee1bd29599001bd9dab96a419f126833",
+          "bytes": 161258
+        },
+        "pixels": {
+          "width": 354,
+          "height": 470,
+          "hash": 2367233748,
+          "center": [
+            94,
+            144,
+            137,
+            255
+          ],
+          "nonblackFraction": 0.8626697920423128,
+          "glError": 0
+        },
+        "touchControls": true
+      }
+    },
+    {
+      "name": "Mobile 320x844 initial and editor render with no horizontal overflow",
+      "status": "passed",
+      "durationMs": 34498.86983499999,
+      "evidence": {
+        "initial": {
+          "name": "mobile-320x844",
+          "file": "/tmp/opencode/parallax-browser/mobile-320x844.png",
+          "sha256": "41142620f31360a41d1dcb023a508a2b3408841a357d3696cc8044b86a1fbb05",
+          "bytes": 172073
+        },
+        "editor": {
+          "name": "editor-mobile-320",
+          "file": "/tmp/opencode/parallax-browser/editor-mobile-320.png",
+          "sha256": "d363a7924fb0eb3fe0b950e7a16fbce9706a42a471c988e459cacd0731fcccaf",
+          "bytes": 145075
+        },
+        "pixels": {
+          "width": 294,
+          "height": 470,
+          "hash": 2599879523,
+          "center": [
+            94,
+            144,
+            137,
+            255
+          ],
+          "nonblackFraction": 0.8623606889564336,
+          "glError": 0
+        },
+        "touchControls": true
+      }
+    },
+    {
+      "name": "Repeated level reload GPU memory and render targets remain bounded",
+      "status": "passed",
+      "durationMs": 10570.438175999967,
+      "evidence": [
+        {
+          "iteration": 0,
+          "memory": {
+            "geometries": 174,
+            "textures": 26
+          },
+          "targets": 3,
+          "targetBytes": 9366160,
+          "depth": 3
+        },
+        {
+          "iteration": 1,
+          "memory": {
+            "geometries": 174,
+            "textures": 26
+          },
+          "targets": 3,
+          "targetBytes": 9366160,
+          "depth": 3
+        },
+        {
+          "iteration": 2,
+          "memory": {
+            "geometries": 174,
+            "textures": 26
+          },
+          "targets": 3,
+          "targetBytes": 9366160,
+          "depth": 3
+        },
+        {
+          "iteration": 3,
+          "memory": {
+            "geometries": 174,
+            "textures": 26
+          },
+          "targets": 3,
+          "targetBytes": 9366160,
+          "depth": 3
+        },
+        {
+          "iteration": 4,
+          "memory": {
+            "geometries": 174,
+            "textures": 26
+          },
+          "targets": 3,
+          "targetBytes": 9366160,
+          "depth": 3
+        },
+        {
+          "iteration": 5,
+          "memory": {
+            "geometries": 174,
+            "textures": 26
+          },
+          "targets": 3,
+          "targetBytes": 9366160,
+          "depth": 3
+        }
+      ]
+    },
+    {
+      "name": "Stress: running physics, three portal pairs, 21 cubes, depth three, actual 120 RAF intervals",
+      "status": "passed",
+      "durationMs": 43953.799095000024,
+      "evidence": {
+        "warmupMs": 8000,
+        "elapsedWallMs": 28720.59999999404,
+        "physicsElapsedSeconds": 11.749999999999906,
+        "mode": "playing",
+        "visibility": "visible",
+        "viewport": [
+          1440,
+          1000
+        ],
+        "pixelRatio": 1,
+        "rafMs": {
+          "samples": 120,
+          "mean": 238.4625,
+          "p50": 233.40000000002328,
+          "p95": 416.6000000000349,
+          "min": 33.20000000001164,
+          "max": 699.8999999999651
+        },
+        "renderCpuMs": {
+          "samples": 120,
+          "mean": 12.344166667262714,
+          "p50": 11.699999988079071,
+          "p95": 21.299999982118607,
+          "min": 6.0999999940395355,
+          "max": 26.200000017881393
+        },
+        "rawRafMs": [
+          250,
+          233.30000000004657,
+          250,
+          266.5999999999767,
+          233.29999999998836,
+          250,
+          283.4000000000233,
+          283.29999999998836,
+          233.29999999998836,
+          233.29999999998836,
+          250.10000000003492,
+          266.5999999999767,
+          266.70000000001164,
+          233.20000000001164,
+          233.39999999996508,
+          250,
+          266.6000000000349,
+          283.3999999999651,
+          249.90000000002328,
+          433.29999999998836,
+          150.10000000003492,
+          166.59999999997672,
+          266.70000000001164,
+          233.29999999998836,
+          233.29999999998836,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          250,
+          266.6000000000349,
+          183.39999999996508,
+          216.60000000003492,
+          100,
+          66.59999999997672,
+          83.40000000002328,
+          133.29999999998836,
+          216.59999999997672,
+          400.1000000000349,
+          633.1999999999534,
+          233.40000000002328,
+          266.70000000001164,
+          266.5999999999767,
+          233.40000000002328,
+          266.5999999999767,
+          250,
+          300,
+          166.70000000001164,
+          199.90000000002328,
+          216.69999999995343,
+          233.30000000004657,
+          200,
+          100,
+          66.69999999995343,
+          116.60000000003492,
+          183.39999999996508,
+          349.9000000000233,
+          466.70000000001164,
+          300,
+          250,
+          249.89999999996508,
+          200,
+          216.70000000001164,
+          233.29999999998836,
+          333.30000000004657,
+          133.39999999996508,
+          183.29999999998836,
+          250,
+          249.90000000002328,
+          233.40000000002328,
+          250,
+          233.29999999998836,
+          216.59999999997672,
+          283.4000000000233,
+          250,
+          266.5999999999767,
+          233.40000000002328,
+          233.29999999998836,
+          249.90000000002328,
+          283.3999999999651,
+          249.90000000002328,
+          233.39999999996508,
+          133.30000000004657,
+          66.69999999995343,
+          166.70000000001164,
+          233.29999999998836,
+          399.9000000000233,
+          350,
+          350,
+          266.70000000001164,
+          266.70000000001164,
+          233.19999999995343,
+          200,
+          300,
+          183.30000000004657,
+          216.69999999995343,
+          200,
+          233.30000000004657,
+          250,
+          250,
+          150,
+          50.09999999997672,
+          33.20000000001164,
+          33.29999999998836,
+          66.70000000001164,
+          83.29999999998836,
+          166.70000000001164,
+          233.39999999996508,
+          416.6000000000349,
+          699.8999999999651,
+          383.4000000000233,
+          433.29999999998836,
+          150,
+          183.29999999998836,
+          233.40000000002328,
+          200,
+          250,
+          266.5999999999767
+        ],
+        "rawRenderCpuMs": [
+          16.400000005960464,
+          13.300000011920929,
+          16.599999994039536,
+          6.0999999940395355,
+          12.900000005960464,
+          11.099999994039536,
+          11.900000005960464,
+          11.300000011920929,
+          12.799999982118607,
+          11.700000017881393,
+          12.300000011920929,
+          9,
+          14.400000005960464,
+          12.099999994039536,
+          18.19999998807907,
+          10.599999994039536,
+          9.900000005960464,
+          11.100000023841858,
+          13.5,
+          7.0999999940395355,
+          11.5,
+          19.100000023841858,
+          10.300000011920929,
+          10.5,
+          13.400000005960464,
+          10.5,
+          8.799999982118607,
+          7.5999999940395355,
+          10.100000023841858,
+          11.399999976158142,
+          10.900000005960464,
+          12,
+          12.599999994039536,
+          13.5,
+          11,
+          8.599999994039536,
+          11.600000023841858,
+          11,
+          15.200000017881393,
+          15.600000023841858,
+          12.599999994039536,
+          8.399999976158142,
+          11.699999988079071,
+          13.200000017881393,
+          10.5,
+          10.799999982118607,
+          11.300000011920929,
+          7.699999988079071,
+          10.199999988079071,
+          14.200000017881393,
+          12.600000023841858,
+          10.5,
+          13.599999994039536,
+          12.900000005960464,
+          21.5,
+          11.300000011920929,
+          13.400000005960464,
+          13.199999988079071,
+          26.200000017881393,
+          14.099999994039536,
+          10.399999976158142,
+          21.299999982118607,
+          8.400000005960464,
+          11.699999988079071,
+          10.300000011920929,
+          11.599999994039536,
+          10.400000005960464,
+          12.400000005960464,
+          11.800000011920929,
+          10,
+          9.400000005960464,
+          18.099999994039536,
+          10.099999994039536,
+          23.900000005960464,
+          17.599999994039536,
+          6.299999982118607,
+          14.200000017881393,
+          8,
+          13.300000011920929,
+          7.5,
+          6.700000017881393,
+          11.800000011920929,
+          12.900000005960464,
+          13.300000011920929,
+          11,
+          11,
+          7.0999999940395355,
+          12.299999982118607,
+          13.900000005960464,
+          9.699999988079071,
+          14.5,
+          8.5,
+          14.299999982118607,
+          10.5,
+          15.300000011920929,
+          8.599999994039536,
+          18.099999994039536,
+          19,
+          23.700000017881393,
+          11.699999988079071,
+          10.300000011920929,
+          19.700000017881393,
+          9.299999982118607,
+          9.399999976158142,
+          12.300000011920929,
+          12.299999982118607,
+          16.400000005960464,
+          11,
+          7.4000000059604645,
+          11.099999994039536,
+          12.199999988079071,
+          12.199999988079071,
+          11.5,
+          9.5,
+          11.5,
+          22,
+          7,
+          17.400000005960464,
+          9.199999988079071,
+          11.599999994039536
+        ],
+        "depths": [
+          3
+        ],
+        "substeps": {
+          "samples": 120,
+          "mean": 11.65,
+          "p50": 12,
+          "p95": 12,
+          "min": 4,
+          "max": 12
+        },
+        "targetBytes": [
+          9366160
+        ],
+        "appMeasure": {
+          "mode": "playing",
+          "level": "stress-recursive-gallery",
+          "rooms": 3,
+          "portalPairs": 3,
+          "cubes": 21,
+          "resolution": [
+            1051,
+            552
+          ],
+          "cssResolution": [
+            1051,
+            552
+          ],
+          "recursion": 3,
+          "physics": {
+            "gravity": 9.81,
+            "fixedDt": 0.008333333333333333,
+            "maxSubsteps": 12,
+            "maxSpeed": 28
+          },
+          "samples": 148,
+          "meanFrameMs": 315.0777027027027,
+          "p50FrameMs": 233.39999999996508,
+          "p95FrameMs": 633.1999999999534,
+          "meanRenderCpuMs": 14.024324325290886,
+          "views": 4,
+          "maxDepth": 3,
+          "targetBytes": 9366160,
+          "drawCalls": 344,
+          "triangles": 182306,
+          "renderMs": 11.599999994039536
+        }
+      }
+    },
+    {
+      "name": "No browser errors or nonlocal network requests",
+      "status": "passed",
+      "durationMs": 0.22127300000283867,
+      "evidence": {
+        "pageErrors": 0,
+        "consoleErrors": 0,
+        "externalRequests": 0
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "desktop-1440x1000",
+      "file": "/tmp/opencode/parallax-browser/desktop-1440x1000.png",
+      "sha256": "01d4876f57aa22a4505c5a935373ea8ad162cc0328684a31bf687e5d2b991726",
+      "bytes": 702830
+    },
+    {
+      "name": "frozen-inspect",
+      "file": "/tmp/opencode/parallax-browser/frozen-inspect.png",
+      "sha256": "3c03da3390e67f28f370749ba4353b4115f3d306bfe0b707235f3c60d2547234",
+      "bytes": 391422
+    },
+    {
+      "name": "solution-1-pickup",
+      "file": "/tmp/opencode/parallax-browser/solution-1-pickup.png",
+      "sha256": "78171762f93ea4fb1cd04dca5d611168f074445d69d216179cc1d44ec8eadbf4",
+      "bytes": 827304,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-1-cube-straddle",
+      "file": "/tmp/opencode/parallax-browser/solution-1-cube-straddle.png",
+      "sha256": "ccf0102b1bd54deeaec8422874462d2fb7988dc09ef6f85be26565d6dd064f0d",
+      "bytes": 585605,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-1-portal-crossing",
+      "file": "/tmp/opencode/parallax-browser/solution-1-portal-crossing.png",
+      "sha256": "8448d91b096645c45f7cc71d6173913e51e34808a8179011afaf89c795058114",
+      "bytes": 522068,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-1-door-open",
+      "file": "/tmp/opencode/parallax-browser/solution-1-door-open.png",
+      "sha256": "47ebed24ea84a496a714775053c8848425f2b0d74d02d65247a48369bfd7b2d5",
+      "bytes": 828657,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-1-goal",
+      "file": "/tmp/opencode/parallax-browser/solution-1-goal.png",
+      "sha256": "ed7d95676b0301b4eb5c8e063e2b817621919184e00d6d2eb90f5597509b6e36",
+      "bytes": 783025,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-2-portal-crossing",
+      "file": "/tmp/opencode/parallax-browser/solution-2-portal-crossing.png",
+      "sha256": "4e52c5799d6dc6913ddced2a21267860d5af95fa5ba555aa80850fad7a9fcd3b",
+      "bytes": 528518,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-2-goal",
+      "file": "/tmp/opencode/parallax-browser/solution-2-goal.png",
+      "sha256": "2d70071dfd658a4c096ce51e6d5a3e8c4097c846475415274640c342678f4042",
+      "bytes": 298111,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-3-pickup",
+      "file": "/tmp/opencode/parallax-browser/solution-3-pickup.png",
+      "sha256": "00285395229fa96c974fb994dfa95e9ed2d83a926ec07c529c807bf4ee8361a0",
+      "bytes": 823340,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-3-cube-straddle",
+      "file": "/tmp/opencode/parallax-browser/solution-3-cube-straddle.png",
+      "sha256": "37ca05f3bb2a7849d7294a27be20e0e58019c2b5fa0082398719836b759fb3a7",
+      "bytes": 611154,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-3-portal-crossing",
+      "file": "/tmp/opencode/parallax-browser/solution-3-portal-crossing.png",
+      "sha256": "8e01d85de1a2ede1f93baab3d63b696dbca040e8493e6f04b8294b2cbbe6856b",
+      "bytes": 566337,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-3-door-open",
+      "file": "/tmp/opencode/parallax-browser/solution-3-door-open.png",
+      "sha256": "4271811bd71e0eeef98f41751cedf8caa82c22eb54e28b9d16825f60c2c8cd64",
+      "bytes": 831681,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "solution-3-goal",
+      "file": "/tmp/opencode/parallax-browser/solution-3-goal.png",
+      "sha256": "8cfa845e27ae561af9f8984fcdf65aef4d4d013e31d30c0a90b194cad62390d3",
+      "bytes": 497154,
+      "exactSimulationTick": true
+    },
+    {
+      "name": "depth-three-self-avatar",
+      "file": "/tmp/opencode/parallax-browser/depth-three-self-avatar.png",
+      "sha256": "6f66047041e915ffd0101ef8499dce00f2fdbb24db3ce12ee0604d57a77b835d",
+      "bytes": 555318
+    },
+    {
+      "name": "occluder-before",
+      "file": "/tmp/opencode/parallax-browser/occluder-before.png",
+      "sha256": "6f66047041e915ffd0101ef8499dce00f2fdbb24db3ce12ee0604d57a77b835d",
+      "bytes": 555318
+    },
+    {
+      "name": "occluder-after",
+      "file": "/tmp/opencode/parallax-browser/occluder-after.png",
+      "sha256": "4c544077ede38e857258400d4d10400e204c52ce9a4aaeadee52935314a7c954",
+      "bytes": 488230
+    },
+    {
+      "name": "destination-behind-plane-clipped",
+      "file": "/tmp/opencode/parallax-browser/destination-behind-plane-clipped.png",
+      "sha256": "6f66047041e915ffd0101ef8499dce00f2fdbb24db3ce12ee0604d57a77b835d",
+      "bytes": 555318
+    },
+    {
+      "name": "destination-inside-plane-control",
+      "file": "/tmp/opencode/parallax-browser/destination-inside-plane-control.png",
+      "sha256": "efb7ce66167e5bce8ebd3e38f78327ca49527bfb7a6a7d00c62b64d5f1b4c86d",
+      "bytes": 538772
+    },
+    {
+      "name": "cube-straddle",
+      "file": "/tmp/opencode/parallax-browser/cube-straddle.png",
+      "sha256": "793ce970a81b48dac09b9f4bf126b0bb39d8c967626be3aa92aebc5099138c98",
+      "bytes": 476160
+    },
+    {
+      "name": "editor-authored-desktop",
+      "file": "/tmp/opencode/parallax-browser/editor-authored-desktop.png",
+      "sha256": "64ed1a3256931df43b1571f4e888e9d06b7f598eff06195671a9155df586f6dc",
+      "bytes": 484130
+    },
+    {
+      "name": "live-relay-before",
+      "file": "/tmp/opencode/parallax-browser/live-relay-before.png",
+      "sha256": "192fc4f773c08379f42be734df4630201ef9d3d71fdc43eddc030ac2ed9534ae",
+      "bytes": 549423
+    },
+    {
+      "name": "live-relay-after",
+      "file": "/tmp/opencode/parallax-browser/live-relay-after.png",
+      "sha256": "67857faf73980272db0ad28b4dc7712ec784e3098a901c7a9e359905fada2b67",
+      "bytes": 547549
+    },
+    {
+      "name": "live-relay-moved",
+      "file": "/tmp/opencode/parallax-browser/live-relay-moved.png",
+      "sha256": "f023e1c3e93bf8aa4bf30932b6db37a0413e68aa4721a93d9ebb355dc2989090",
+      "bytes": 549481
+    },
+    {
+      "name": "mobile-390x844",
+      "file": "/tmp/opencode/parallax-browser/mobile-390x844.png",
+      "sha256": "553f22fd8a7fcd601f6ee731d72ea60120daaa45bc8184f45f389ecf64c7ad78",
+      "bytes": 202596
+    },
+    {
+      "name": "editor-mobile-390",
+      "file": "/tmp/opencode/parallax-browser/editor-mobile-390.png",
+      "sha256": "27a88df2d947fd7c4dda280b7d2ad962ee1bd29599001bd9dab96a419f126833",
+      "bytes": 161258
+    },
+    {
+      "name": "mobile-320x844",
+      "file": "/tmp/opencode/parallax-browser/mobile-320x844.png",
+      "sha256": "41142620f31360a41d1dcb023a508a2b3408841a357d3696cc8044b86a1fbb05",
+      "bytes": 172073
+    },
+    {
+      "name": "editor-mobile-320",
+      "file": "/tmp/opencode/parallax-browser/editor-mobile-320.png",
+      "sha256": "d363a7924fb0eb3fe0b950e7a16fbce9706a42a471c988e459cacd0731fcccaf",
+      "bytes": 145075
+    },
+    {
+      "name": "stress-depth-three",
+      "file": "/tmp/opencode/parallax-browser/stress-depth-three.png",
+      "sha256": "ca349c95e86d531940622c2870f06365680daad3fc50e3c6cbaf8ac962e37bc5",
+      "bytes": 541834
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "externalRequests": [],
+  "notes": [
+    "Solution checks click the actual field-guide replay UI, then accelerate only SolutionReplay.update. No solution flags, room assignments, or cube translations are used.",
+    "Rendering and interaction fixtures use validated documents and public World.moveBody for setup. Renderer-only occlusion fixtures are explicitly identified.",
+    "Frame timings are actual headless Chromium requestAnimationFrame intervals with software WebGL, not a hardware performance claim.",
+    "Headless pointer capture can emit cursor-warp deltas which cancel synthetic mouse movement. The desktop look check records actual mouse-event-driven yaw changes, not a guaranteed final aim. Precision pickup/throw uses real touch UI plus keyboard events."
+  ],
+  "sourceHashesBefore": {
+    "src/main.js": "cfe7629097c56e415270757fa331fc9fd7939dc5d2fe23d1f7384a93adcac05d",
+    "src/render.js": "4b085292424d25392a6be207c0aa2faea8c0a01819f1c502f76c40caa25a1053",
+    "src/core.js": "3a8f4e202ac0e8bd734d0af5468a8ea0d368dc16b505d68e8efdb92eb0d5c4d5",
+    "src/editor.js": "78c3a315967f52124c92be61f4a3badb001745fc469cec7efc3f79a613d896a1",
+    "src/replay.js": "af69acebf6978b0f13dffb49f8aeaf9fa4f086a63d3ac44976d66f4a7eb3d55b",
+    "src/levels.js": "4edb137d7d806d84a1bdcd0af12af650730aba9dc40898dbfc43dc973c9c589f"
+  },
+  "nodeTests": {
+    "command": "npm test",
+    "code": 0,
+    "output": "\n> parallax-observatory@1.0.0 test\n> node --test tests/*.test.js\n\n✔ room centers are geometric centers, and cloning is deeply isolated (5.513982ms)\n✔ wall-to-wall mapping has independently specified numeric translation and orientation (0.426624ms)\n✔ wall-to-floor transform redirects normal momentum, not merely position (0.265126ms)\n✔ oblique frames match an independent scalar oracle; roundtrips conserve speed (5.62828ms)\n✔ published roundtrip, normalized direction, and near-zero speed tolerances hold for all frame classes (0.649068ms)\n✔ all shipped, blank, and stress documents satisfy stringent validation (3.603256ms)\n✔ malformed documents and references are rejected without throwing or mutation (7.571046ms)\n✔ coplanar aperture overlaps are rejected; valid rolled wall frames are accepted (0.71281ms)\n✔ swept wall crossing transfers identity, room, velocity, orientation, and spin exactly once (6.400032ms)\n✔ floor-to-wall crossing has numeric velocity/spin oracle and does not reset mapped look (2.883322ms)\n✔ ceiling-to-sidewall apertures transport the eye and body independently (2.355144ms)\n✔ rolled wall apertures use body extents and transport orientation at runtime (2.640108ms)\n✔ finite aperture margins pass an interior body and reject edge clips and frame tunneling (28.477821ms)\n✔ closed portals and occupied destinations stay solid without corrupting bodies (7.502596ms)\n✔ straddling has one physical identity, a destination ghost, and safe disable recovery (2.281684ms)\n✔ destination bodies collide against the protruding ghost of a source cube (2.012751ms)\n✔ portal closure is refused when both safe recovery poses have become occupied (3.296119ms)\n✔ crossing exit cooldown prevents immediate chatter and permits deliberate return (2.401382ms)\n✔ all six room boundaries support finite swept collision and thin rotated blocks occlude (29.157378ms)\n✔ analytic rays accumulate metric distance through a portal and obey occlusion and budgets (0.862005ms)\n✔ recursive rays terminate at the exact traversal budget and expose a depth-three path (0.85943ms)\n✔ rays intersect rotated cubes, doors, and blocks analytically rather than through walls (0.59202ms)\n✔ pickup, hold, drop, and throwing operate through a portal in the actual cube room (1.632174ms)\n✔ held cubes cannot pass through solid walls and remote pickup obeys total reach (8.286913ms)\n✔ a picked-up cube can be carried through the delivery portal and released onto its plate (99.549068ms)\n✔ a supported plate weight stops activating the plate immediately when held (0.814695ms)\n✔ stacked cubes settle on one another and player support is stable (14.545926ms)\n✔ plates require supported occupancy; door wiring is AND and goals require spatial entry (28.439358ms)\n✔ fixed-step results agree at 30/60/144 Hz, and overload is discarded (8.894463ms)\n✔ public input and advance alone move a walking player through a wall portal (4.578096ms)\n✔ a gravity-driven cube crosses a floor portal once and settles without rest loops (14.477786ms)\n✔ speed is bounded, jumping is edge-triggered, and camera uses body center plus eye offset (3.237808ms)\n✔ physical solution commands complete level 1 without success flags (16.273392ms)\n✔ physical solution commands complete level 2 without success flags (6.465878ms)\n✔ physical solution commands complete level 3 without success flags (13.698249ms)\n✔ stress simulation remains finite with 21 cubes and bounded event history (144.611305ms)\n✔ a closing door waits for an occupying body instead of crushing it into a boundary (11.499352ms)\n✔ history is deeply isolated from its input and retained mutator drafts (4.78969ms)\n✔ no-op transactions preserve history and branching clears only redo (1.276095ms)\n✔ invalid transactions and thrown mutators preserve document and both stacks (8.062455ms)\n✔ deleting either portal removes the linked pair in one undoable operation (10.717091ms)\n✔ deleting a door repairs plate links and goal requirements, with exact undo/redo (2.245404ms)\n✔ room deletion cascades remote portal partners and cross-room references atomically (2.100798ms)\n✔ deleting the start room finds a safe replacement start; the last room cannot be deleted (2.816164ms)\n✔ room deletion with nowhere for the player to fit is rejected without partial cascade (1.44677ms)\n✔ deleting plates, cubes, blocks, and goals leaves a valid document (9.893609ms)\n✔ replace validates before resetting history and clones the replacement (2.581607ms)\n✔ JSON import rejects malformed, oversized, nonfinite, versioned, and dangling data without changes (11.329258ms)\n✔ multiple valid drag samples make exactly one undo record (1.612537ms)\n✔ invalid final drag restores its start and preserves existing undo and redo (0.871302ms)\n✔ a drag can recover from an invalid sample or return to its start without a history entry (0.830635ms)\n✔ dragging a room translates its contents and boundary portals, but not its partners (1.850731ms)\n✔ editor runs without DOM, emits validated changes, and uses metadata-only selection (3.040021ms)\n✔ invalid imports preserve editor selection, document, and history; valid loads reset them (1.115368ms)\n✔ invalid drag previews emit only a validated restoration and leave no history record (0.996732ms)\n✔ player is the unambiguous start selection even when an imported entity is named spawn (1.214227ms)\n✔ default creation probes clear floor positions for each object and does not mutate supplied levels (32.896252ms)\n✔ editor playtest callback receives the authored document; World stays isolated (5.022735ms)\n✔ disposing an active drag restores the authoring snapshot and suppresses later notifications (0.654479ms)\n✔ oblique clipping agrees with signed world halfspace and preserves XY/UV at aspect 1.44 (4.941018ms)\n✔ oblique clipping agrees with signed world halfspace and preserves XY/UV at aspect 0.46208530805687204 (0.868387ms)\n✔ oblique clipping agrees with signed world halfspace and preserves XY/UV at aspect 0.3791469194312796 (0.966835ms)\n✔ source and destination straddle planes keep complementary samples of one physical cube (13.67265ms)\n✔ portalPlane uses inward normal and metric offset for floor and rotated wall planes (0.344858ms)\n✔ floor-to-wall virtual eye stays in the source until the transported eye crosses the exit (8.965698ms)\n✔ public gameplay input replay completes The Delivery (228.229994ms)\n✔ The Delivery replay resets and reproduces every tick at varying update rates (566.175506ms)\n✔ public gameplay input replay completes Falling Sideways (5.181878ms)\n✔ Falling Sideways replay resets and reproduces every tick at varying update rates (26.79002ms)\n✔ public gameplay input replay completes The Long Way Home (86.080007ms)\n✔ The Long Way Home replay resets and reproduces every tick at varying update rates (505.677264ms)\n✔ replay clock ignores invalid updates, accumulates fractional ticks, and exposes stage progress (7.548914ms)\n✔ unsupported, obstructed, and time-limited replays stop honestly without success flags (70.808826ms)\nℹ tests 73\nℹ suites 0\nℹ pass 73\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 1655.457896\n"
+  },
+  "build": {
+    "command": "npm run build",
+    "code": 0,
+    "output": "\n> parallax-observatory@1.0.0 build\n> vite build\n\nvite v7.3.6 building client environment for production...\ntransforming...\n✓ 16 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                   0.66 kB │ gzip:   0.41 kB\ndist/assets/index-BgLyA585.css   39.32 kB │ gzip:   8.85 kB\ndist/assets/index-Crc2kzG1.js   655.84 kB │ gzip: 176.94 kB\n\n(!) Some chunks are larger than 500 kB after minification. Consider:\n- Using dynamic import() to code-split the application\n- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks\n- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.\n✓ built in 1.56s\n"
+  },
+  "previewLog": "\n> parallax-observatory@1.0.0 preview\n> vite preview --host 0.0.0.0 --port 40407 --strictPort\n\n  Local: http://localhost:40407/\n  [Private network addresses omitted for public release.]\n",
+  "url": "http://127.0.0.1:40407",
+  "server": "automatically started production preview",
+  "environment": {
+    "browser": "153.0.8010.12",
+    "platform": "linux",
+    "release": "7.0.0-31-generic",
+    "arch": "x64",
+    "cpu": "AMD Ryzen 7 5825U with Radeon Graphics",
+    "logicalCpus": 16,
+    "totalMemoryBytes": 12949561344,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+    "hardwareConcurrency": 16,
+    "glVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "glVendor": "Google Inc. (Google)",
+    "glRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+  },
+  "performance": {
+    "warmupMs": 8000,
+    "elapsedWallMs": 28720.59999999404,
+    "physicsElapsedSeconds": 11.749999999999906,
+    "mode": "playing",
+    "visibility": "visible",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "pixelRatio": 1,
+    "rafMs": {
+      "samples": 120,
+      "mean": 238.4625,
+      "p50": 233.40000000002328,
+      "p95": 416.6000000000349,
+      "min": 33.20000000001164,
+      "max": 699.8999999999651
+    },
+    "renderCpuMs": {
+      "samples": 120,
+      "mean": 12.344166667262714,
+      "p50": 11.699999988079071,
+      "p95": 21.299999982118607,
+      "min": 6.0999999940395355,
+      "max": 26.200000017881393
+    },
+    "rawRafMs": [
+      250,
+      233.30000000004657,
+      250,
+      266.5999999999767,
+      233.29999999998836,
+      250,
+      283.4000000000233,
+      283.29999999998836,
+      233.29999999998836,
+      233.29999999998836,
+      250.10000000003492,
+      266.5999999999767,
+      266.70000000001164,
+      233.20000000001164,
+      233.39999999996508,
+      250,
+      266.6000000000349,
+      283.3999999999651,
+      249.90000000002328,
+      433.29999999998836,
+      150.10000000003492,
+      166.59999999997672,
+      266.70000000001164,
+      233.29999999998836,
+      233.29999999998836,
+      250,
+      250,
+      250,
+      250,
+      250,
+      250,
+      250,
+      266.6000000000349,
+      183.39999999996508,
+      216.60000000003492,
+      100,
+      66.59999999997672,
+      83.40000000002328,
+      133.29999999998836,
+      216.59999999997672,
+      400.1000000000349,
+      633.1999999999534,
+      233.40000000002328,
+      266.70000000001164,
+      266.5999999999767,
+      233.40000000002328,
+      266.5999999999767,
+      250,
+      300,
+      166.70000000001164,
+      199.90000000002328,
+      216.69999999995343,
+      233.30000000004657,
+      200,
+      100,
+      66.69999999995343,
+      116.60000000003492,
+      183.39999999996508,
+      349.9000000000233,
+      466.70000000001164,
+      300,
+      250,
+      249.89999999996508,
+      200,
+      216.70000000001164,
+      233.29999999998836,
+      333.30000000004657,
+      133.39999999996508,
+      183.29999999998836,
+      250,
+      249.90000000002328,
+      233.40000000002328,
+      250,
+      233.29999999998836,
+      216.59999999997672,
+      283.4000000000233,
+      250,
+      266.5999999999767,
+      233.40000000002328,
+      233.29999999998836,
+      249.90000000002328,
+      283.3999999999651,
+      249.90000000002328,
+      233.39999999996508,
+      133.30000000004657,
+      66.69999999995343,
+      166.70000000001164,
+      233.29999999998836,
+      399.9000000000233,
+      350,
+      350,
+      266.70000000001164,
+      266.70000000001164,
+      233.19999999995343,
+      200,
+      300,
+      183.30000000004657,
+      216.69999999995343,
+      200,
+      233.30000000004657,
+      250,
+      250,
+      150,
+      50.09999999997672,
+      33.20000000001164,
+      33.29999999998836,
+      66.70000000001164,
+      83.29999999998836,
+      166.70000000001164,
+      233.39999999996508,
+      416.6000000000349,
+      699.8999999999651,
+      383.4000000000233,
+      433.29999999998836,
+      150,
+      183.29999999998836,
+      233.40000000002328,
+      200,
+      250,
+      266.5999999999767
+    ],
+    "rawRenderCpuMs": [
+      16.400000005960464,
+      13.300000011920929,
+      16.599999994039536,
+      6.0999999940395355,
+      12.900000005960464,
+      11.099999994039536,
+      11.900000005960464,
+      11.300000011920929,
+      12.799999982118607,
+      11.700000017881393,
+      12.300000011920929,
+      9,
+      14.400000005960464,
+      12.099999994039536,
+      18.19999998807907,
+      10.599999994039536,
+      9.900000005960464,
+      11.100000023841858,
+      13.5,
+      7.0999999940395355,
+      11.5,
+      19.100000023841858,
+      10.300000011920929,
+      10.5,
+      13.400000005960464,
+      10.5,
+      8.799999982118607,
+      7.5999999940395355,
+      10.100000023841858,
+      11.399999976158142,
+      10.900000005960464,
+      12,
+      12.599999994039536,
+      13.5,
+      11,
+      8.599999994039536,
+      11.600000023841858,
+      11,
+      15.200000017881393,
+      15.600000023841858,
+      12.599999994039536,
+      8.399999976158142,
+      11.699999988079071,
+      13.200000017881393,
+      10.5,
+      10.799999982118607,
+      11.300000011920929,
+      7.699999988079071,
+      10.199999988079071,
+      14.200000017881393,
+      12.600000023841858,
+      10.5,
+      13.599999994039536,
+      12.900000005960464,
+      21.5,
+      11.300000011920929,
+      13.400000005960464,
+      13.199999988079071,
+      26.200000017881393,
+      14.099999994039536,
+      10.399999976158142,
+      21.299999982118607,
+      8.400000005960464,
+      11.699999988079071,
+      10.300000011920929,
+      11.599999994039536,
+      10.400000005960464,
+      12.400000005960464,
+      11.800000011920929,
+      10,
+      9.400000005960464,
+      18.099999994039536,
+      10.099999994039536,
+      23.900000005960464,
+      17.599999994039536,
+      6.299999982118607,
+      14.200000017881393,
+      8,
+      13.300000011920929,
+      7.5,
+      6.700000017881393,
+      11.800000011920929,
+      12.900000005960464,
+      13.300000011920929,
+      11,
+      11,
+      7.0999999940395355,
+      12.299999982118607,
+      13.900000005960464,
+      9.699999988079071,
+      14.5,
+      8.5,
+      14.299999982118607,
+      10.5,
+      15.300000011920929,
+      8.599999994039536,
+      18.099999994039536,
+      19,
+      23.700000017881393,
+      11.699999988079071,
+      10.300000011920929,
+      19.700000017881393,
+      9.299999982118607,
+      9.399999976158142,
+      12.300000011920929,
+      12.299999982118607,
+      16.400000005960464,
+      11,
+      7.4000000059604645,
+      11.099999994039536,
+      12.199999988079071,
+      12.199999988079071,
+      11.5,
+      9.5,
+      11.5,
+      22,
+      7,
+      17.400000005960464,
+      9.199999988079071,
+      11.599999994039536
+    ],
+    "depths": [
+      3
+    ],
+    "substeps": {
+      "samples": 120,
+      "mean": 11.65,
+      "p50": 12,
+      "p95": 12,
+      "min": 4,
+      "max": 12
+    },
+    "targetBytes": [
+      9366160
+    ],
+    "appMeasure": {
+      "mode": "playing",
+      "level": "stress-recursive-gallery",
+      "rooms": 3,
+      "portalPairs": 3,
+      "cubes": 21,
+      "resolution": [
+        1051,
+        552
+      ],
+      "cssResolution": [
+        1051,
+        552
+      ],
+      "recursion": 3,
+      "physics": {
+        "gravity": 9.81,
+        "fixedDt": 0.008333333333333333,
+        "maxSubsteps": 12,
+        "maxSpeed": 28
+      },
+      "samples": 148,
+      "meanFrameMs": 315.0777027027027,
+      "p50FrameMs": 233.39999999996508,
+      "p95FrameMs": 633.1999999999534,
+      "meanRenderCpuMs": 14.024324325290886,
+      "views": 4,
+      "maxDepth": 3,
+      "targetBytes": 9366160,
+      "drawCalls": 344,
+      "triangles": 182306,
+      "renderMs": 11.599999994039536
+    }
+  },
+  "sourceHashesAfter": {
+    "src/main.js": "cfe7629097c56e415270757fa331fc9fd7939dc5d2fe23d1f7384a93adcac05d",
+    "src/render.js": "4b085292424d25392a6be207c0aa2faea8c0a01819f1c502f76c40caa25a1053",
+    "src/core.js": "3a8f4e202ac0e8bd734d0af5468a8ea0d368dc16b505d68e8efdb92eb0d5c4d5",
+    "src/editor.js": "78c3a315967f52124c92be61f4a3badb001745fc469cec7efc3f79a613d896a1",
+    "src/replay.js": "af69acebf6978b0f13dffb49f8aeaf9fa4f086a63d3ac44976d66f4a7eb3d55b",
+    "src/levels.js": "4edb137d7d806d84a1bdcd0af12af650730aba9dc40898dbfc43dc973c9c589f"
+  },
+  "sourceChangedDuringRun": false,
+  "summary": {
+    "passed": 18,
+    "failed": 0,
+    "notRun": 0,
+    "nodeTestsPassed": true,
+    "buildPassed": true,
+    "fatal": false
+  }
+}

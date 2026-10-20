@@ -1,0 +1,16 @@
+{
+  "skip_to_content": "Skip to content",
+  "menu": "Menu",
+  "close": "Close",
+  "language": "Language",
+  "lang_ar_name": "العربية",
+  "lang_en_name": "English",
+  "theme_light": "Light",
+  "theme_dark": "Dark",
+  "theme_system": "Auto",
+  "empty_title": "Content is being prepared",
+  "empty_text": "No content has been added yet.",
+  "not_found_title": "Page not found",
+  "not_found_text": "The page you are looking for is not available.",
+  "back_home": "Back to home"
+}

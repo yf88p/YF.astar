@@ -1,0 +1,16 @@
+{
+  "skip_to_content": "تخطَّ إلى المحتوى",
+  "menu": "القائمة",
+  "close": "إغلاق",
+  "language": "اللغة",
+  "lang_ar_name": "العربية",
+  "lang_en_name": "English",
+  "theme_light": "فاتح",
+  "theme_dark": "داكن",
+  "theme_system": "تلقائي",
+  "empty_title": "المحتوى قيد الإعداد",
+  "empty_text": "لم تتم إضافة محتوى بعد.",
+  "not_found_title": "الصفحة غير موجودة",
+  "not_found_text": "الصفحة التي تبحث عنها غير متاحة.",
+  "back_home": "العودة إلى الرئيسية"
+}
